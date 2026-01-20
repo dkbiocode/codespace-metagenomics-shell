@@ -218,8 +218,8 @@ fasterq-dump was killed (signal 13 SIGPIPE)
 ~~~
 
 
-As mentioned before, we will get the information in `FASTQ` format. `fasterq-dump` takes 
-shorter times to accomplish the task because its multi-thread capability. We can assign 
+As mentioned before, we will get the information in `FASTQ` format. `fasterq-dump` takes
+shorter times to accomplish the task because its multi-thread capability. We can assign
 how many threads we want `fasterq-dump` to use to the task, more threads is less time. We
 can use a command to know the number of threads available in our working station:
 
@@ -230,7 +230,7 @@ $ nproc --all
 
 
 ~~~
-12
+2
 ~~~
 
 
@@ -240,11 +240,11 @@ $ sysctl -n hw.ncpu
 ~~~
 
 
-Also, we can ask `fasterq-dump` to display the progress by the `-p` flag. So we will run an 
-example with the progress displayed, and with 12 threads:
+Also, we can ask `fasterq-dump` to display the progress by the `-p` flag. So we will run an
+example with the progress displayed, and with 2 threads (matching the Codespace CPU cores):
 
 ~~~
-$ fasterq-dump SRR10153499 -p -e 12
+$ fasterq-dump SRR10153499 -p -e 2
 ~~~
 
 
@@ -269,11 +269,11 @@ SRR10153499_2.fastq
 ~~~
 
 
-Since `fasterq-dumb` does not take multiple accesions just one, we will do a `while` cycle 
+Since `fasterq-dumb` does not take multiple accesions just one, we will do a `while` cycle
 to proccess all the accessions in the `SRA-names.txt`:
 
 ~~~
-cat SRA-accessions.txt | sed -n '1!p'| while read line; do fasterq-dump $line -p -e 12; done
+cat SRA-accessions.txt | sed -n '1!p'| while read line; do fasterq-dump $line -p -e 2; done
 ~~~
 
 
@@ -320,10 +320,10 @@ to upload their data. This is a useful resource for learnes, students and profes
 use the already scrutinized data to practice, run newly-develop tools, and teach exercises.
 
 
-> ## Exercise 1: 
+> ## Exercise 1:
 > By using the next piece of code:
 > ~~~
-> cat SRA-accessions.txt | sed -n '1!p'| while read line; do fasterq-dump -s $line -p -e 12; done
+> cat SRA-accessions.txt | sed -n '1!p'| while read line; do fasterq-dump -s $line -p -e 2; done
 > ~~~
 > 
 > How many new file we will have in our folder?
