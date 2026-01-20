@@ -70,7 +70,7 @@ $ pwd
 You should see the output (your home directory path):
 
 ~~~
-/home/codespace
+/home/vscode
 ~~~
 
 > ## Tip  

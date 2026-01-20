@@ -21,15 +21,15 @@ available. It is faster than its predecesor and a little bit more intuitive that
 
 ### Creating a folder for the data
 It is important to maintain onder in your projects. This extrapolates to the tools used inside
-each one of them. We will create a folder inside or disk where we will save the downloaded data:
+each one of them. We will create a folder inside our workspace where we will save the downloaded data:
 
 ~~~
-$ mkdir ~/sra-toolkit/data/
+$ mkdir -p /workspaces/codespace-metagenomics-shell/sra-toolkit/data/
 ~~~
 {: .bash}
 
 ~~~
-$ cd ~/sra-toolkit/data/
+$ cd /workspaces/codespace-metagenomics-shell/sra-toolkit/data/
 ~~~
 {: .bash}
 
@@ -105,7 +105,7 @@ If you're working in GitHub Codespaces, you can download the file directly to yo
 We will move/rename the file to our `/data` directory as **SRA-accessions.txt**:
 
 ~~~
-$ mv SRR_Acc_List ~/sra-toolkit/data/SRA-accessions.txt
+$ mv SRR_Acc_List /workspaces/codespace-metagenomics-shell/sra-toolkit/data/SRA-accessions.txt
 $ cat SRA-accessions.txt
 ~~~
 {: .bash}

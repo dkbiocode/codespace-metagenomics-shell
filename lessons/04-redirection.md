@@ -39,12 +39,12 @@ Let's give it a try!
 > nucleotide at that position in the DNA sequence. 
 > 
 
-We'll search for strings inside of our fastq files. Let's first make sure we are in the correct 
+We'll search for strings inside of our fastq files. Let's first make sure we are in the correct
 directory.
 
 ~~~
-$ cd ~/dc_workshop/data/untrimmed_fastq
-$ ls  
+$ cd /workspaces/codespace-metagenomics-shell/dc_workshop/data/untrimmed_fastq
+$ ls
 ~~~
 ~~~
 JC1A_R1.fastq   JC1A_R2.fastq     JP4D_R1.fastq     JP4D_R2.fastq  TruSeq3-PE.fa

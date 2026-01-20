@@ -46,15 +46,15 @@ window.onload = set_page_view_defaults;
 
 We have been able to do much work with existing files, but what if we want to write our own files? We are not going to type in a FASTA file, but we will see as we go through other tutorials; there are many reasons we will want to write a file or edit an existing file.
 
-We will use a text editor called Nano to add text to files. We are going to create a file to take notes about what we have been doing with the data files in `~/dc_workshopd/data/untrimmed_fastq`.
+We will use a text editor called Nano to add text to files. We are going to create a file to take notes about what we have been doing with the data files in `/workspaces/codespace-metagenomics-shell/dc_workshop/data/untrimmed_fastq`.
 
 Taking notes is good practice when working in bioinformatics. We can create a file called a `README.txt` that describes the data files in the directory or documents how the files in that directory were generated. As the name suggests, it is a file that others should read to understand the information in that directory.
 
-Let's change our working directory to `~/dc_workshop/data/untrimmed_fastq` using `cd`,
+Let's change our working directory to `/workspaces/codespace-metagenomics-shell/dc_workshop/data/untrimmed_fastq` using `cd`,
 then run `nano` to create a file called `README.txt`:
 
 ~~~
-$ cd ~/dc_workshop/data/untrimmed_fastq
+$ cd /workspaces/codespace-metagenomics-shell/dc_workshop/data/untrimmed_fastq
 $ nano README.txt
 ~~~
 
@@ -190,7 +190,7 @@ $ ls -l bad-reads-script.sh
 ~~~
 
 ~~~
--rw-rw-r-- 1 codespace codespace 0 Oct 25 21:46 bad-reads-script.sh
+-rw-rw-r-- 1 vscode vscode 0 Oct 25 21:46 bad-reads-script.sh
 ~~~
 
 We see that it says `-rw-r--r--`. This combination shows that the file can be read by any user and written to by the file owner (you). We want to change these permissions so the file can be executed as a program. We use the command `chmod` as we did earlier when we removed write permissions. Here we are adding (`+`) executable permissions (`+x`).
@@ -206,7 +206,7 @@ $ ls -l bad-reads-script.sh
 ~~~
 
 ~~~
--rwxrwxr-x 1 codespace codespace 0 Oct 25 21:46 bad-reads-script.sh
+-rwxrwxr-x 1 vscode vscode 0 Oct 25 21:46 bad-reads-script.sh
 ~~~
 
 Now we see that it says `-rwxr-xr-x`. The `x`'s there now tell us we can run it as a program. So, let us try it! We will need to put `./` at the beginning, so the computer knows to look here in this directory for the program.
@@ -217,19 +217,19 @@ $ ./bad-reads-script.sh
 
 The script should run the same way as before, but now we have created our own computer program!
 
-It is good practice to keep any large files compressed while not using them. In this way, you save storage space; you will see that you will appreciate it when you advance your analysis. So, since we will not use the FASTQ files for now, let us compress them. Moreover, run `ls -lh` to confirm that they are compressed. 
+It is good practice to keep any large files compressed while not using them. In this way, you save storage space; you will see that you will appreciate it when you advance your analysis. So, since we will not use the FASTQ files for now, let us compress them. Moreover, run `ls -lh` to confirm that they are compressed.
 
 ~~~
-$ gzip ~/dc_workshop/data/untrimmed_fastq/*.fastq
-$ ls -lh  ~/dc_workshop/data/untrimmed_fastq/*.fastq.gz
+$ gzip /workspaces/codespace-metagenomics-shell/dc_workshop/data/untrimmed_fastq/*.fastq
+$ ls -lh /workspaces/codespace-metagenomics-shell/dc_workshop/data/untrimmed_fastq/*.fastq.gz
 ~~~
 
 ~~~
 total 428M
--rw-r--r-- 1 codespace codespace  24M Nov 26 12:36 JC1A_R1.fastq.gz
--rw-r--r-- 1 codespace codespace  24M Nov 26 12:37 JC1A_R2.fastq.gz
--rw-r--r-- 1 codespace codespace 179M Nov 26 12:44 JP4D_R1.fastq.gz
--rw-r--r-- 1 codespace codespace 203M Nov 26 12:51 JP4D_R2.fastq.gz
+-rw-r--r-- 1 vscode vscode  24M Nov 26 12:36 JC1A_R1.fastq.gz
+-rw-r--r-- 1 vscode vscode  24M Nov 26 12:37 JC1A_R2.fastq.gz
+-rw-r--r-- 1 vscode vscode 179M Nov 26 12:44 JP4D_R1.fastq.gz
+-rw-r--r-- 1 vscode vscode 203M Nov 26 12:51 JP4D_R2.fastq.gz
 ~~~
 
 ## Moving and downloading data
@@ -425,16 +425,16 @@ $ scp <file you want to move, local or remote> <path to where I want to move it,
 
     
 > ## Exercise 3: Uploading data with `scp`
-> Let us download the text file  `~/data/untrimmed_fastq/scripted_bad_reads.txt` from a remote machine to your local computer.
+> Let us download the text file  `/workspaces/codespace-metagenomics-shell/dc_workshop/data/untrimmed_fastq/scripted_bad_reads.txt` from a remote machine to your local computer.
 > Which of the following commands would download the file?
 > A)
 > ~~~
-> $  scp local_file.txt user@ip.address:~/
+> $  scp local_file.txt user@ip.address:/workspaces/codespace-metagenomics-shell/
 > ~~~
 > {: .bash}
 > B)
 > ~~~
-> $ scp user@ip.address:~/dc_workshop/data/untrimmed_fastq/scripted_bad_reads.txt ~/Downloads
+> $ scp user@ip.address:/workspaces/codespace-metagenomics-shell/dc_workshop/data/untrimmed_fastq/scripted_bad_reads.txt ~/Downloads
 > ~~~
 > {: .bash}
 >

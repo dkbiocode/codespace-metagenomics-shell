@@ -123,7 +123,7 @@ i.e.,
 the directory that the computer assumes we want to run commands in
 unless we explicitly specify something else.
 Here,
-the computer's response is your home directory (e.g., `/home/codespace` in Codespaces),
+the computer's response is your home directory (e.g., `/home/vscode` in Codespaces),
 which is the top level directory within your environment:
 
 ~~~
@@ -131,7 +131,7 @@ $ pwd
 ~~~
 
 ~~~
-/home/codespace
+/home/vscode
 ~~~
 
 Let's look at how our file system is organized. We can see what files and subdirectories are in this directory by running `ls`,
@@ -218,9 +218,9 @@ to quit.
 > > 
 > > ~~~
 > > total 12
-> > drwxr-xr-x 3 codespace codespace 4096 Jun  3 17:59 data
-> > drwxrwxr-x 2 codespace codespace 4096 Jun  3 18:02 mags
-> > drwxrwxr-x 3 codespace codespace 4096 Jun  3 18:25 taxonomy
+> > drwxr-xr-x 3 vscode vscode 4096 Jun  3 17:59 data
+> > drwxrwxr-x 2 vscode vscode 4096 Jun  3 18:02 mags
+> > drwxrwxr-x 3 vscode vscode 4096 Jun  3 18:25 taxonomy
 > > ~~~
 > > {: .output}
 > > 
