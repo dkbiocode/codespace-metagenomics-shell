@@ -102,15 +102,15 @@ AAA11BB3333BGG1GGEC1E?0E0B0BFDGFHD2FBH110A1BEE?A/BAFBDGH///>FEGGG><@/#//?#?/#//?
 > Have your search return all matching lines and the name (or identifier) for each sequence
 > that contains a match.
 > 
-> > ## Solution  
-> >'1.To search for the GATCGAGAGGGGATAGGCG sequence in the file JC1A_R2.fastq:  
-> >~~~
+> > ## Solution
+> > 1. To search for the GATCGAGAGGGGATAGGCG sequence in the file JC1A_R2.fastq:
+> > ~~~
 > > $ grep -B1 GATCGAGAGGGGATAGGCG JC1A_R2.fastq
-> >~~~
->> 
-> > The output shows all of the lines that contain the sequence GATCGAGAGGGGATAGGCG. As the flag -B1 is used, it also shows the previous line to each occurence. In a FastQ file the identifier of each sequence is one line avobe the sequence itself, therefore in this example you can see the names and the sequences that match your query.
-> > 
-> >'2.To search for a sequence in all of the FastQ files you could use the asterisk `*` wildcard before the file extension `.fastq` :
+> > ~~~
+> >
+> > The output shows all of the lines that contain the sequence GATCGAGAGGGGATAGGCG. As the flag -B1 is used, it also shows the previous line to each occurence. In a FastQ file the identifier of each sequence is one line above the sequence itself, therefore in this example you can see the names and the sequences that match your query.
+> >
+> > 2. To search for a sequence in all of the FastQ files you could use the asterisk `*` wildcard before the file extension `.fastq` :
 > >~~~
 > > $ grep -B1 AAGTT *.fastq
 > >~~~  
@@ -185,7 +185,7 @@ four to get the number of sequences that match our search pattern.
 >> 
 >> 
 >> ~~~
->596 bad_reads.txt
+> 596 bad_reads.txt
 >> ~~~
 >> 
 >>

@@ -116,7 +116,7 @@ contents using the program `cat`.
 $ cat JC1A_R2.fastq
 ~~~
 
-`cat` is a terrific program, but, as you just saw if your ran the command, when the file is really big (as the files we have), it can
+`cat` is a terrific program, but, as you just saw if you ran the command, when the file is really big (as the files we have), it can
 be annoying to use. You can always use Ctrl+C to stop the command.  
 
 The program, `less`, is useful for this
@@ -380,7 +380,7 @@ This will delete not only the directory, but all files within the directory. If 
 you will be asked whether you want to override your permission settings. 
 
 
-If we want to modifiy a file without all the permissions you'll be asked if you want to override your file permissions.
+If we want to modify a write-protected file, you'll be asked if you want to override your file permissions.
 for example:
 
 ~~~
@@ -397,7 +397,7 @@ just nicely put the files in the Trash. They're really gone.
 >
 > Starting in the `/workspaces/codespace-metagenomics-shell/dc_workshop/data/untrimmed_fastq` directory, do the following:
 > 1. Make sure that you have deleted your backup directory and all files it contains.  
-> 2. Create a copy of each of your FASTQ files. (Note: You'll need to do this individually for each of the two FASTQ files. We haven't 
+> 2. Create a copy of each of your FASTQ files. (Note: You'll need to do this individually for each of the four FASTQ files. We haven't
 > learned yet how to do this
 > with a wildcard.)  
 > 3. Use a wildcard to move all of your backup files to a new backup directory.   

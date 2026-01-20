@@ -3,21 +3,21 @@
 There are a lot of data in different repositories in the cloud. A lot of works have been 
 putting effort in sequencing genomic data to get the information needed to answer a myriad of 
 questions.
-One of the biggest repository-pages for genomic/metagenomic data is the National Certer for 
+One of the biggest repository-pages for genomic/metagenomic data is the National Center for 
 Biotechnology Information (NCBI). Regardless of the big data that NCBI has hoarded in the last 
 decade, how to access and download this data remains troublesome. Users around institutes have 
 been facing the inconclusive path of going from a `Bioproject` page, to the `Biosample` 
 information, then jumping to the `SRA experiments` immense list and returning finally to the 
 `Biosample` page. In order to download the desired data, we need to locate the *Accession* 
-number of the sample data, and type it in one of the `SRA Toolkit` tools. This is not trivial (It should be!), so let's go 
-to explore `SRA Toolkit`
+number of the sample data, and type it in one of the `SRA Toolkit` tools. This is not trivial (It should be!), so let's go
+to explore `SRA Toolkit`.
 
 ## fasterq-dump 
 
 In ancient times (before the sra-tools version 2.9.1), `fastq-dump` was the tool used by 
 default to access public data in NCBI. But, with the 2.9.1 version, `fasterq-dump` became
-available. It is faster than its predecessor and a little bit more intuitive than the former 
-. `fastq-dump` is still available, but the line of thought of the developers is to erase it sooner than later.
+available. It is faster than its predecessor and a little bit more intuitive than the former.
+`fastq-dump` is still available, but the line of thought of the developers is to erase it sooner than later.
 
 ### Creating a folder for the data
 It is important to maintain order in your projects. This extrapolates to the tools used inside
@@ -35,11 +35,11 @@ $ cd /workspaces/codespace-metagenomics-shell/sra-toolkit/data/
 
 Inside this folder, we will download the data that we will use the rest of the lesson.
 
-### Accessing to the data
+### Accessing the data
 
 Uploading the data used in a research project is now a must for the majority of the journals.
-We will go to the [paper-page](https://www.tandfonline.com/doi/full/10.1080/21678421.2021.1904994?scroll=top&needAccess=true) to access to the data-page from the NCBI.
-In this page, we will go to the aknowledgements section, were the 
+We will go to the [paper-page](https://www.tandfonline.com/doi/full/10.1080/21678421.2021.1904994?scroll=top&needAccess=true) to access the data-page from the NCBI.
+In this page, we will go to the acknowledgements section, where the 
 **Data availability statement** is found.
 
 <a href="../fig/02-07-01.png">
@@ -132,7 +132,7 @@ SRR10153515
 ~~~
 
 
-### Using faterq-dump to download the data
+### Using fasterq-dump to download the data
 
 As mentioned at the beginning, `fasterq-dump` is the new version of `fastq-dump`. Let's see 
 some of the parameters that this new tool can offer:
@@ -158,13 +158,13 @@ library, no matter if those reads are forward or reverse sequenced. Each read wi
 along the 4 lines usual in the `FASTQ` format
 
 
-#### ---split-file (-S)
+#### --split-file (-S)
 
 With this statement, we will end with separate files for the forward and the reverse reads
 (1.fastq and 2.fastq respectively). Nevertheless, the unmatched reads (those present in
-the forward but without their complement in reverse and viceversa) will also be located
+the forward but without their complement in reverse and vice versa) will also be located
 in their respective file. This can be useful for special kinds of analyses, but usually we
-will prefer to exclude the unmatched reads from the next steps. Moreoever, this option
+will prefer to exclude the unmatched reads from the next steps. Moreover, this option
 will write each read with the four lines from the `FASTQ` format.
 
 #### --concatenate-reads
@@ -174,14 +174,14 @@ and reverse) is written alongside the four lines characteristic of the `FASTQ` f
 
 #### --split-spot
 
-This is the deafult option for `fasterq-dump`. The source file is split in a file containing
+This is the default option for `fasterq-dump`. The source file is split in a file containing
 the forward reads (_i.e._ 1.fastq) and the reverse ones (_i.e._ 2.fastq). Unmatched reads are placed in a 3.fastq or SRA-code-name file. Each read is written with the 4 characteristic
 lines of the `FASTQ` format.
 Most of the sequencing projects are now in paired-end read format. This is also the case for 
 the reads that we will use, so this is the most reliable option.
 
-All this options have its reciprocal one in `fastq-dump`, which can be a reference for 
-the users accostumed to it:
+All this options have its reciprocal one in `fastq-dump`, which can be a reference for
+the users accustomed to it:
 
 |-------------------+-----------------------------------------------------------------------------------------------------------------|   
 | Old option                                                 |                             New option                                 |   
@@ -314,7 +314,7 @@ SRR10153503_1.fastq  SRR10153508_1.fastq  SRR10153513_1.fastq
 
 Now, we have the 36 files (2 for every one of the 18 samples) that we will use in the next 
 lessons. 
-`fasterq-dump` is a useful tool to access to public data. Since the explosion of the 
+`fasterq-dump` is a useful tool to access public data. Since the explosion of the 
 next-generation sequencing technologies, it is imperative for publishable research projects 
 to upload their data. This is a useful resource for learners, students and professors to 
 use the already scrutinized data to practice, run newly-develop tools, and teach exercises.
@@ -326,7 +326,7 @@ use the already scrutinized data to practice, run newly-develop tools, and teach
 > cat SRA-accessions.txt | sed -n '1!p'| while read line; do fasterq-dump -s $line -p -e 2; done
 > ~~~
 > 
-> How many new file we will have in our folder?
+> How many new files will we have in our folder?
 > 1. 36
 > 2. 18
 > 3. 17

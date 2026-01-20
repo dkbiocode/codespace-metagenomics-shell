@@ -63,7 +63,7 @@ You should see something like this:
 <a href="../fig/02-05-01.png">
   <img src="../fig/02-05-01.png" alt="nano screen with the name of the file in the top bar, a blank screen to write in the middle, and a bottom bar with the shortcuts for the available nano instructions." />
 </a>
-<em> Figure 1. GNU Nano Text Editor Menu. <em/>
+<em> Figure 1. GNU Nano Text Editor Menu. </em>
 
 The text at the bottom of the screen shows the keyboard shortcuts for performing various tasks in `nano`. We will talk more about how to interpret this information soon.
 
@@ -94,7 +94,7 @@ Let us type in a few lines of text. Describe the files in this directory or what
     <a href="../fig/02-05-02.png">
   <img src="../fig/02-05-02.png" alt="The same screen as before but now it has text in the middle part." />
 </a>
-<em> Figure 2. For example, the README file is written in nano. <em/>
+<em> Figure 2. For example, the README file is written in nano. </em>
     
 Once we are happy with our text, we can press <kbd>Ctrl</kbd>-<kbd>O</kbd> (press the <kbd>Ctrl</kbd> or <kbd>Control</kbd> key and, while
 holding it down, press the <kbd>O</kbd> key) to write our data to disk. You will be asked what file we want to save this to:
@@ -173,8 +173,8 @@ It will look like nothing happened, but now if you look at `scripted_bad_reads.t
 > > ## Solution
 > > 
 > > ~~~
-> >1. Open `bad-reads-script.sh` and add the line `echo "Script finished!"` after the `grep` command and save the file.  
-> >2. Run the updated script.
+> > 1. Open `bad-reads-script.sh` and add the line `echo "Script finished!"` after the `grep` command and save the file.
+> > 2. Run the updated script.
 > > ~~~
 > > 
 > 
@@ -389,7 +389,7 @@ to your remote machine.
   <img src="../fig/02-05-09.png" alt="Upload data with R studio." 
      width="636" 
      height="418"
-       alt="Select filed button highlighted in the emergent window" />
+       alt="Select file button highlighted in the emergent window" />
 </a>
     
 3. A new screen is displayed on your computer where you should choose the file to upload. 

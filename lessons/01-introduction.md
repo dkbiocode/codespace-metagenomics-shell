@@ -99,7 +99,7 @@ Several commands are frequently used to create, inspect, rename, and delete file
 > into your shell, followed by pressing the <kbd>Enter</kbd> key,
 > your window should look like this:    
 > `~\$ `   
-> That only shows the ultimate directory where you ar standing. In this case
+> That only shows the ultimate directory where you are standing. In this case
 > it is the home directory. The symbol `~` is an abbreviation of the home directory. 
 > This isn't necessary to follow along (in fact, your prompt may have
 > other helpful information you want to know about).  This is up to you!  
@@ -188,7 +188,7 @@ there are no decorations, it's a file.
 To understand a little better how to move between folders, let's see the following image:
 
 <a href="../fig/02-01-01.png">
-  <img src="../fig/02-01-01.png" width="870" height="631" alt="Folder organization diagram showing a parent directory called dc_workshop, with tree subdirectories called data, mags, and taxonomy. Insida data there is another one called untrimmed_fastq, and inside taxonomy there is another one called mags_taxonomy."/>
+  <img src="../fig/02-01-01.png" width="870" height="631" alt="Folder organization diagram showing a parent directory called dc_workshop, with tree subdirectories called data, mags, and taxonomy. Inside data there is another one called untrimmed_fastq, and inside taxonomy there is another one called mags_taxonomy."/>
 </a>
 
 Here we can see a diagram of how the folders are arranged one inside another. In this way, if we think about moving,
@@ -205,7 +205,7 @@ your keyboard's down arrow or use the <kbd>Space</kbd> key to go forward one pag
 and the <kbd>b</kbd> key to go backwards one page. When you are done reading, hit <kbd>q</kbd>
 to quit.
 
-> ## Excercise 1: Extra information with `ls -l`
+> ## Exercise 1: Extra information with `ls -l`
 > Use the `-l` option for the `ls` command to display more information for each item 
 > in the directory. What is one piece of additional information this long format
 > gives you that you don't see with the bare `ls` command?
@@ -302,8 +302,8 @@ $ cd data/untrimmed_fastq
 $ ls JC<tab>
 ~~~
 
-The shell auto-completes your command to `JC1A_R`, because there is another file name in 
-the directory begin with this prefix. When you hit
+The shell auto-completes your command to `JC1A_R`, because there is another file name in
+the directory begins with this prefix. When you hit
 <kbd>Tab</kbd> again, the shell will list the possible choices.
 
 ~~~

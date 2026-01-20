@@ -72,7 +72,7 @@ $ pwd
 /home/vscode/dc_workshop/data
 ~~~
 
-From this output, we can see that `..` did indeed took us back one level in our file system. 
+From this output, we can see that `..` did indeed take us back one level in our file system. 
 
 You can chain these together to move several levels:
 
@@ -80,7 +80,7 @@ You can chain these together to move several levels:
 $ cd ../../..
 ~~~
 
-> ## Excercise 1: Finding hidden directories
+> ## Exercise 1: Finding hidden directories
 >
 > First navigate to the `dc_workshop` directory. There is a hidden directory within this directory. Explore the options for `ls` to 
 > find out how to see hidden directories. List the contents of the directory and 
@@ -240,7 +240,7 @@ Over time, it will become easier for you to keep a mental note of the
 structure of the directories that you are using and how to quickly
 navigate amongst them.
 
-> ## Excercise 2: Relative path resolution
+> ## Exercise 2: Relative path resolution
 > 
 > Using the filesystem diagram below, if `pwd` displays `/Users/thing`,
 > what will `ls ../backup` display?
