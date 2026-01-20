@@ -67,10 +67,10 @@ $ cd ~
 $ pwd
 ~~~
 
-You should see the output: 
+You should see the output (your home directory path):
 
 ~~~
-/home/dcuser  
+/home/codespace
 ~~~
 
 > ## Tip  

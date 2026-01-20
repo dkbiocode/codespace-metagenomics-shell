@@ -61,53 +61,17 @@ In this lesson you will learn how to use the command line interface to move arou
 On a Mac or Linux machine, you can access a shell through a program called Terminal, which is already available
 on your computer. If you're using Windows, you'll need to download a separate program to access the shell (see installation instructions [here](https://carpentries-incubator.github.io/metagenomics-workshop/setup.html)).
 
-In this workshop, we suggest using a remote server, to invest most of our time learning the basics of shell by manipulating some experimental data, instead of dealing with installations. The remote server already includes the required bioinformatics packages as well as the large datasets that usually take a lot of time to load into everyone's local computers.
+In this workshop, we'll be using GitHub Codespaces, a cloud-based development environment that already includes the required tools and datasets. This allows us to focus on learning shell basics rather than dealing with installations.
 
 > ## Shell alternatives
-> 
-> In case you decide to follow the lesson on your computer, you won't need to use `ssh` command because you will not connect to a remote machine.  
-> If you are working on a remote machine that includes RStudio (which you will open in a browser) you can work in the terminal that is included in RStudio.
+>
+> If you're using GitHub Codespaces, you're already connected to a terminal environment - no SSH required!
+> If you prefer to work on your local machine, you can follow along but may need to adjust some paths.
 >
 
-Ask your instructor for the `ip_address` and password to login.
+If you're using GitHub Codespaces, you should already have a terminal open. If not, you can open one from the menu (Terminal → New Terminal) or by pressing <kbd>Ctrl</kbd>+<kbd>`</kbd>.
 
-To log in you need the `ssh` command (ssh stands for Secure Shell), your username and the adress of the machine you are logging into.
-~~~
-$ ssh dcuser@ec2-18-702-132-236.compute-1.amazonaws.com
-~~~
-
-Then you are prompted to type the password. Take into account that while you are typing a password no characters will appear on the screen, trust that they are being typed and press enter. 
-
-After logging in, you will see a screen showing something like this: 
-
-~~~
-Welcome to Ubuntu 14.04.3 LTS (GNU/Linux 3.13.0-48-generic x86_64)
-
- * Documentation:  https://help.ubuntu.com/
-
-  System information as of Sat Feb  2 00:08:17 UTC 2019
-
-  System load: 0.0                Memory usage: 5%   Processes:       82
-  Usage of /:  29.9% of 98.30GB   Swap usage:   0%   Users logged in: 0
-
-  Graph this data and manage this system at:
-    https://landscape.canonical.com/
-
-  Get cloud support with Ubuntu Advantage Cloud Guest:
-    http://www.ubuntu.com/business/services/cloud
-
-597 packages can be updated.
-444 updates are security updates.
-
-New release '16.04.5 LTS' available.
-Run 'do-release-upgrade' to upgrade to it.
-
-
-Last login: Fri Feb  1 22:34:53 2019 from c-73-116-43-163.hsd1.ca.comcast.net
-~~~
-
-This provides a lot of information about the remote server that you're logging in to. We're not going to use most of this information for
-our workshop, so you can clear your screen using the `clear` command. 
+You can clear your screen using the `clear` command. 
 
 ~~~
 $ clear
@@ -159,15 +123,15 @@ i.e.,
 the directory that the computer assumes we want to run commands in
 unless we explicitly specify something else.
 Here,
-the computer's response is `/home/dcuser`,
-which is the top level directory within our cloud system:
+the computer's response is your home directory (e.g., `/home/codespace` in Codespaces),
+which is the top level directory within your environment:
 
 ~~~
 $ pwd
 ~~~
 
 ~~~
-/home/dcuser
+/home/codespace
 ~~~
 
 Let's look at how our file system is organized. We can see what files and subdirectories are in this directory by running `ls`,
@@ -254,9 +218,9 @@ to quit.
 > > 
 > > ~~~
 > > total 12
-> > drwxr-xr-x 3 dcuser dcuser 4096 Jun  3 17:59 data
-> > drwxrwxr-x 2 dcuser dcuser 4096 Jun  3 18:02 mags
-> > drwxrwxr-x 3 dcuser dcuser 4096 Jun  3 18:25 taxonomy
+> > drwxr-xr-x 3 codespace codespace 4096 Jun  3 17:59 data
+> > drwxrwxr-x 2 codespace codespace 4096 Jun  3 18:02 mags
+> > drwxrwxr-x 3 codespace codespace 4096 Jun  3 18:25 taxonomy
 > > ~~~
 > > {: .output}
 > > 

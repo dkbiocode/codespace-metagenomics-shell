@@ -315,7 +315,7 @@ and change the file permissions so that we can read from, but not write to, the 
 
 First, let's make a copy of one of our FASTQ files using the `cp` command. 
 
-Navigate to the `/home/dcuser/dc_workshop/data/untrimmed_fastq` directory and enter:
+Navigate to the `~/dc_workshop/data/untrimmed_fastq` directory and enter:
 
 ~~~
 $ cp JC1A_R2.fastq JC1A_R2-copy.fastq
@@ -395,7 +395,7 @@ just nicely put the files in the Trash. They're really gone.
 
 > ## Exercise 1: Make backup folder with write-protected permissions
 >
-> Starting in the `/home/dcuser/dc_workshop/data/untrimmed_fastq` directory, do the following:
+> Starting in the `~/dc_workshop/data/untrimmed_fastq` directory, do the following:
 > 1. Make sure that you have deleted your backup directory and all files it contains.  
 > 2. Create a copy of each of your FASTQ files. (Note: You'll need to do this individually for each of the two FASTQ files. We haven't 
 > learned yet how to do this
@@ -413,10 +413,10 @@ just nicely put the files in the Trash. They're really gone.
 > > It's always a good idea to check your work with `ls -l backup`. You should see something like: 
 > > 
 > > ~~~
-> > -r--r--r-- 1 dcuser dcuser  24203913 Jun 17 23:08 JC1A_R1-backup.fastq
-> > -r--r--r-- 1 dcuser dcuser  24917444 Jun 17 23:10 JC1A_R2-backup.fastq
-> > -r--r--r-- 1 dcuser dcuser 186962503 Jun 17 23:10 JP4D_R1-backup.fastq
-> > -r--r--r-- 1 dcuser dcuser 212161034 Jun 17 23:10 JP4D_R2-backup.fastq
+> > -r--r--r-- 1 codespace codespace  24203913 Jun 17 23:08 JC1A_R1-backup.fastq
+> > -r--r--r-- 1 codespace codespace  24917444 Jun 17 23:10 JC1A_R2-backup.fastq
+> > -r--r--r-- 1 codespace codespace 186962503 Jun 17 23:10 JP4D_R1-backup.fastq
+> > -r--r--r-- 1 codespace codespace 212161034 Jun 17 23:10 JP4D_R2-backup.fastq
 > > ~~~
 > > {: .output}
 > {: .solution}

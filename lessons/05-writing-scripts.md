@@ -190,7 +190,7 @@ $ ls -l bad-reads-script.sh
 ~~~
 
 ~~~
--rw-rw-r-- 1 dcuser dcuser 0 Oct 25 21:46 bad-reads-script.sh
+-rw-rw-r-- 1 codespace codespace 0 Oct 25 21:46 bad-reads-script.sh
 ~~~
 
 We see that it says `-rw-r--r--`. This combination shows that the file can be read by any user and written to by the file owner (you). We want to change these permissions so the file can be executed as a program. We use the command `chmod` as we did earlier when we removed write permissions. Here we are adding (`+`) executable permissions (`+x`).
@@ -206,7 +206,7 @@ $ ls -l bad-reads-script.sh
 ~~~
 
 ~~~
--rwxrwxr-x 1 dcuser dcuser 0 Oct 25 21:46 bad-reads-script.sh
+-rwxrwxr-x 1 codespace codespace 0 Oct 25 21:46 bad-reads-script.sh
 ~~~
 
 Now we see that it says `-rwxr-xr-x`. The `x`'s there now tell us we can run it as a program. So, let us try it! We will need to put `./` at the beginning, so the computer knows to look here in this directory for the program.
@@ -226,10 +226,10 @@ $ ls -lh  ~/dc_workshop/data/untrimmed_fastq/*.fastq.gz
 
 ~~~
 total 428M
--rw-r--r-- 1 dcuser dcuser  24M Nov 26 12:36 JC1A_R1.fastq.gz
--rw-r--r-- 1 dcuser dcuser  24M Nov 26 12:37 JC1A_R2.fastq.gz
--rw-r--r-- 1 dcuser dcuser 179M Nov 26 12:44 JP4D_R1.fastq.gz
--rw-r--r-- 1 dcuser dcuser 203M Nov 26 12:51 JP4D_R2.fastq.gz
+-rw-r--r-- 1 codespace codespace  24M Nov 26 12:36 JC1A_R1.fastq.gz
+-rw-r--r-- 1 codespace codespace  24M Nov 26 12:37 JC1A_R2.fastq.gz
+-rw-r--r-- 1 codespace codespace 179M Nov 26 12:44 JP4D_R1.fastq.gz
+-rw-r--r-- 1 codespace codespace 203M Nov 26 12:51 JP4D_R2.fastq.gz
 ~~~
 
 ## Moving and downloading data
@@ -310,9 +310,9 @@ download the page instead of showing it to us **and** specifies that it should s
 file using the same name it had on the server: species_EnsemblBacteria.txt
 
 It's important to note that both ``curl`` and ``wget`` download to the computer that the
-command line belongs to. So, if you are logged into AWS on the command line and execute
-the ``curl`` command above in the AWS terminal, the file will be downloaded to your AWS
-machine, not your local one.
+command line belongs to. So, if you are working in a Codespace and execute
+the ``curl`` command above in the terminal, the file will be downloaded to your Codespace
+environment, not your local machine.
 
 ### Moving files between your laptop and your instance
 
@@ -324,11 +324,11 @@ to transfer files..
  
     
 > ## Transferring files scenarios
-> 1. If you are working on your **local** computer, there is no need to transfer files because you already have them locally.   
-> In that case, you only need to know the directory you are working in.  
-> 2. If you are working on a remote machine such as an AWS instance, you can use the `scp` command. In that case, it is *always* easier
-to start the transfer locally. **If you are typing into a terminal, the terminal should not be logged into your instance. It should show your local computer. If you are using a transfer program, it needs to be installed on your local machine, not your instance.**     
-> 3. If you are using the **RStudio server** from the AWS instance, you can transfer files between your local and your remote machine using the graphic interface of RStudio.  
+> 1. If you are working on your **local** computer, there is no need to transfer files because you already have them locally.
+> In that case, you only need to know the directory you are working in.
+> 2. If you are working in **GitHub Codespaces**, you can download files directly from the VS Code interface by right-clicking on them in the Explorer panel and selecting "Download". You can also drag and drop files from your local machine into the Explorer panel to upload them.
+> 3. If you are working on a remote machine via SSH, you can use the `scp` command. In that case, it is *always* easier
+to start the transfer locally. **If you are typing into a terminal, the terminal should not be logged into your instance. It should show your local computer.**  
     
 
 ### Downloading files in RStudio  
@@ -370,11 +370,11 @@ We will follow the next five steps to download files with the RStudio interface.
 5. Your file should now be downloaded to your local computer.  
 
 
-### Upload files to AWS in RStudio  
-    
-Now that we learned how to download files from the RStudio interface, 
+### Upload files in RStudio
+
+Now that we learned how to download files from the RStudio interface,
 we will learn the opposite action, uploading files from your local computer
-to your remote AWS machine.  
+to your remote machine.  
     
 1. Choose the option 'Upload' in your RStudio interface.
 <a href="../fig/02-05-08.png">
@@ -424,24 +424,26 @@ $ scp <file you want to move, local or remote> <path to where I want to move it,
 ~~~
 
     
-> ## Exercise 3: Uploading data with `scp`  
-> Let us download the text file  `~/data/untrimmed_fastq/scripted_bad_reads.txt` from the remote machine to your local computer.
-> Which of the following commands would download the file?  
-> A)  
+> ## Exercise 3: Uploading data with `scp`
+> Let us download the text file  `~/data/untrimmed_fastq/scripted_bad_reads.txt` from a remote machine to your local computer.
+> Which of the following commands would download the file?
+> A)
 > ~~~
-> $  scp local_file.txt dcuser@ip.address:/home/dcuser/
+> $  scp local_file.txt user@ip.address:~/
 > ~~~
 > {: .bash}
-> B)  
+> B)
 > ~~~
-> $ scp dcuser@ip.address:/home/dcuser/dc_workshop/data/untrimmed_fastq/scripted_bad_reads.txt. ~/Downloads
+> $ scp user@ip.address:~/dc_workshop/data/untrimmed_fastq/scripted_bad_reads.txt ~/Downloads
 > ~~~
 > {: .bash}
 >
 > > ## Solution
-> >    A) False. This command will upload the file `local_file.txt` to the dcuser home directory in your AWS remote machine.  
+> >    A) False. This command will upload the file `local_file.txt` to the user's home directory on the remote machine.
 > >    B) True. This option downloads the bad reads file in `~/data/scripted_bad_reads.txt` to your local `~/Downloads` directory
-> >       **(make sure you use substitute dcuser@ ip.address with your remote login credentials)**
+> >       **(make sure you substitute user@ip.address with your remote login credentials)**
+> >
+> > Note: In GitHub Codespaces, you typically don't need `scp` - just right-click a file in the Explorer panel and select "Download".
 > {: .solution}
 
 ---

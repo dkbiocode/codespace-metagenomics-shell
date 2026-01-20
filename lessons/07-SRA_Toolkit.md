@@ -99,12 +99,14 @@ download a **Accession List** by clicking in this section of the **Select** squa
 ###### Figure 5. Downloading the Accession List file
 
 You can obtain this file from [here]().
-We will move the new file to our `/data` directory and re-name it as **SRA-names.txt**:
 
+If you're working in GitHub Codespaces, you can download the file directly to your workspace by right-clicking on the Explorer panel and selecting "Upload". Alternatively, you can download it using `curl` or `wget` if you have a direct URL.
+
+We will move/rename the file to our `/data` directory as **SRA-accessions.txt**:
 
 ~~~
-$ mv ~/Downloads/SRR_Acc_List ~/sra-toolkit/data/SRA-accessions.txt
-$ cat SRA-names.txt
+$ mv SRR_Acc_List ~/sra-toolkit/data/SRA-accessions.txt
+$ cat SRA-accessions.txt
 ~~~
 {: .bash}
 
@@ -221,7 +223,7 @@ shorter times to accomplish the task because its multi-thread capability. We can
 how many threads we want `fasterq-dump` to use to the task, more threads is less time. We
 can use a command to know the number of threads available in our working station:
 
-#### On Linux:
+#### On Linux (including Codespaces):
 ~~~
 $ nproc --all
 ~~~
@@ -232,9 +234,9 @@ $ nproc --all
 ~~~
 {: .output}
 
-#### On Mac
+#### On Mac (if working locally):
 ~~~
-/usr/sbin/sysctl -n hw.ncpu
+$ sysctl -n hw.ncpu
 ~~~
 {: .bash}
 
