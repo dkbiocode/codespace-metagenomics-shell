@@ -26,12 +26,12 @@ each one of them. We will create a folder inside our workspace where we will sav
 ~~~
 $ mkdir -p /workspaces/codespace-metagenomics-shell/sra-toolkit/data/
 ~~~
-{: .bash}
+
 
 ~~~
 $ cd /workspaces/codespace-metagenomics-shell/sra-toolkit/data/
 ~~~
-{: .bash}
+
 
 Inside this folder, we will download the data that we will use the rest of the lesson.
 
@@ -108,7 +108,7 @@ We will move/rename the file to our `/data` directory as **SRA-accessions.txt**:
 $ mv SRR_Acc_List /workspaces/codespace-metagenomics-shell/sra-toolkit/data/SRA-accessions.txt
 $ cat SRA-accessions.txt
 ~~~
-{: .bash}
+
 
 ~~~
 SRR10153499
@@ -130,7 +130,7 @@ SRR10153511
 SRR10153513
 SRR10153515
 ~~~
-{: .output}
+
 
 ### Using faterq-dump to download the data
 
@@ -139,7 +139,7 @@ some of the parameters that this new tool can offer:
 ~~~
 $ fasterq-dump --help
 ~~~
-{: .bash}
+
 
 First, we will put attention to the split options:
 
@@ -149,7 +149,7 @@ First, we will put attention to the split options:
   -3|--split-3                     writes single reads into special file
      --concatenate-reads           writes whole spots into one file
 ~~~
-{: .bash}
+
 
 #### --split-spot (-s)
 
@@ -202,7 +202,7 @@ terminal. Also, we will use some of the commands that we reviewed in the past le
 ~~~
 fasterq-dump -s --stdout SRR10153499 --include-technical | head -n 8
 ~~~
-{: .bash}
+
 
 
 ~~~
@@ -216,7 +216,7 @@ CCTGTTTGCGCCCCACGCTTTCGTGCCTCAGTGTCAGATATACCTTTGTGAGCTGCCTTCGCAATCGGAGTTCTGCGTAA
 >AAA1B3C@1AAGEGGGGGF0B0BBAFG1FGFGGHHHHHDGBEGFHHHDADAFGFGHFGGFF//EFFCBEFHBGHFFEAEGHFHGBFGF2GHHHEGHGGG>EHFHHFGG?EFHFGCA@CGGHHFGFH2FFHGFFHHGHHHHHHFHHHHFH1ACC@-.<F1C0FFCFH/GFGHHFHCGGHHCCCC0GCGFGEGGH0CG.C9..C
 fasterq-dump was killed (signal 13 SIGPIPE)
 ~~~
-{: .output}
+
 
 As mentioned before, we will get the information in `FASTQ` format. `fasterq-dump` takes 
 shorter times to accomplish the task because its multi-thread capability. We can assign 
@@ -227,18 +227,18 @@ can use a command to know the number of threads available in our working station
 ~~~
 $ nproc --all
 ~~~
-{: .bash}
+
 
 ~~~
 12
 ~~~
-{: .output}
+
 
 #### On Mac (if working locally):
 ~~~
 $ sysctl -n hw.ncpu
 ~~~
-{: .bash}
+
 
 Also, we can ask `fasterq-dump` to display the progress by the `-p` flag. So we will run an 
 example with the progress displayed, and with 12 threads:
@@ -246,7 +246,7 @@ example with the progress displayed, and with 12 threads:
 ~~~
 $ fasterq-dump SRR10153499 -p -e 12
 ~~~
-{: .bash}
+
 
 ~~~
 join   :|-------------------------------------------------- 100%
@@ -255,19 +255,19 @@ spots read      : 11,688
 reads read      : 23,376
 reads written   : 23,376
 ~~~
-{: .output}
+
 
 ~~~
 $ ls 
 ~~~
-{: .bash}
+
 
 ~~~
 SRA-accessions.txt   
 SRR10153499_1.fastq  
 SRR10153499_2.fastq
 ~~~
-{: .bash}
+
 
 Since `fasterq-dumb` does not take multiple accesions just one, we will do a `while` cycle 
 to proccess all the accessions in the `SRA-names.txt`:
@@ -275,7 +275,7 @@ to proccess all the accessions in the `SRA-names.txt`:
 ~~~
 cat SRA-accessions.txt | sed -n '1!p'| while read line; do fasterq-dump $line -p -e 12; done
 ~~~
-{: .bash}
+
 
 ~~~
 join   :|-------------------------------------------------- 100%
@@ -291,12 +291,12 @@ reads written   : 27,114
 join   :|-------------------------------------------------- 100%
 concat :|-------------------------------------------------- 100%
 ~~~
-{: .output}
+
 
 ~~~
 $ ls -lh
 ~~~
-{: .bash}
+
 
 ~~~
 SRA-accessions.txt   SRR10153503_2.fastq  SRR10153508_2.fastq  SRR10153513_2.fastq
@@ -310,7 +310,7 @@ SRR10153502_1.fastq  SRR10153507_1.fastq  SRR10153512_1.fastq
 SRR10153502_2.fastq  SRR10153507_2.fastq  SRR10153512_2.fastq
 SRR10153503_1.fastq  SRR10153508_1.fastq  SRR10153513_1.fastq
 ~~~
-{: .output}
+
 
 Now, we have the 36 files (2 for every one of the 18 samples) that we will use in the next 
 lessons. 
@@ -325,7 +325,7 @@ use the already scrutinized data to practice, run newly-develop tools, and teach
 > ~~~
 > cat SRA-accessions.txt | sed -n '1!p'| while read line; do fasterq-dump -s $line -p -e 12; done
 > ~~~
-> {: .bash}
+> 
 > How many new file we will have in our folder?
 > 1. 36
 > 2. 18
@@ -337,5 +337,9 @@ use the already scrutinized data to practice, run newly-develop tools, and teach
 >
 >> ## Solution
 >> Answer: 17
-> {: .solution}
-{: .challenge}
+> 
+
+
+---
+
+[Previous lesson: Project Organization (06-organization.md)](06-organization.md)

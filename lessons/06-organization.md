@@ -92,8 +92,8 @@ You should see the output (your home directory path):
 > > $ mkdir workshop/data
 > > $ mkdir workshop/results
 > > ~~~
-> > {: .bash}
-> {: .solution}
+> > 
+> 
 
 Use `ls -R` to verify that you have created these directories. The `-R` option for `ls` stands for recursive. This option causes
 `ls` to return the contents of each subdirectory within the directory
@@ -179,9 +179,9 @@ $ history | tail -n 7
 > > ~~~
 > > $ history | tail -n 8 >> workshop_log_2021_03_25.sh
 > > ~~~
-> > {: .bash}
+> > 
 > > Note we used the last 7 lines as an example, the number of lines may vary.
-> {: .solution}
+> 
 
 You may have noticed that your history contains the `history` command itself. To remove this redundancy
 from our log, let's use the `nano` text editor to fix the file:  
@@ -281,3 +281,7 @@ bioinformatics journey!
 ## Key Points
 - Spend the time to organize your file system when you start a new project. Your future self will thank you!
 - Always save a write-protected copy of your raw data.
+
+---
+
+[Previous lesson: Writing Scripts (05-writing-scripts.md)](05-writing-scripts.md) | [Next lesson: SRA Toolkit (07-SRA_Toolkit.md)](07-SRA_Toolkit.md)

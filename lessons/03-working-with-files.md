@@ -242,7 +242,7 @@ AAA#>>A#1>AAGGGGGGGG#ABFEFGGHGEFGEGGGEGFHHHGGGGGGGGEEEEEGCG?EGHHHG@CC#??#???FFG#
 > ~~~
 > $ head -n 4 JC1A_R2.fastq
 > ~~~
-> {: .bash}
+> 
 > 
 > ~~~
 > @MISEQ-LAB244-W7:91:000000000-A5C7L:1:1101:13417:1998 2:N:0:TCGNAG
@@ -250,7 +250,7 @@ AAA#>>A#1>AAGGGGGGGG#ABFEFGGHGEFGEGGGEGFHHHGGGGGGGGEEEEEGCG?EGHHHG@CC#??#???FFG#
 > +
 > 1>AAADAAFFF1G11AA0000AAFE/AAE0FBAEGGG#B/>EF/EGHHHHHHG?C##???/FE/ECHCE?C<FGGGGCCCGGGG@?AE.BFFEAB-9@@@FFFFFEEEEFBFF--99A-;@B=@A@@?@@>-@@--/B--@--@@-F----;@--:F---9-AB9=-@-9E-99A-;:BF-9-@@-;@-@#############################################################
 > ~~~
-> {: .output}
+> 
 > 
 > Most of the nucleotides are correct, although we have some unknown bases (N). This is actually a good read!
 > 
@@ -264,7 +264,7 @@ AAA#>>A#1>AAGGGGGGGG#ABFEFGGHGEFGEGGGEGFHHHGGGGGGGGEEEEEGCG?EGHHHG@CC#??#???FFG#
 > ~~~
 > !!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!
 > ~~~
-> {: .output}
+> 
 > 
 > The `#` character and each of the `!` characters represent the encoded quality for an 
 > individual nucleotide. The numerical value assigned to each of these characters depends on the 
@@ -277,7 +277,7 @@ AAA#>>A#1>AAGGGGGGGG#ABFEFGGHGEFGEGGGEGFHHHGGGGGGGGEEEEEGCG?EGHHHG@CC#??#???FFG#
 >                   |         |         |         |         |
 > Quality score:    0........10........20........30........40..                          
 > ~~~
-> {: .output}
+> 
 > 
 > Each quality score represents the probability that the corresponding nucleotide call is
 > incorrect. This quality score is logarithmically based, so a quality score of 10 reflects a
@@ -293,7 +293,7 @@ AAA#>>A#1>AAGGGGGGGG#ABFEFGGHGEFGEGGGEGFHHHGGGGGGGGEEEEEGCG?EGHHHG@CC#??#???FFG#
 > +
 > 1>AAADAAFFF1G11AA0000AAFE/AAE0FBAEGGG#B
 > ~~~
-> {: .output}
+> 
 > 
 > We can now see that the quality of each of the `N`s is 0 and the quality of the only
 > nucleotide call (`C`) is also very poor (`#` = a quality score of 2). This is indeed a very
@@ -418,8 +418,8 @@ just nicely put the files in the Trash. They're really gone.
 > > -r--r--r-- 1 vscode vscode 186962503 Jun 17 23:10 JP4D_R1-backup.fastq
 > > -r--r--r-- 1 vscode vscode 212161034 Jun 17 23:10 JP4D_R2-backup.fastq
 > > ~~~
-> > {: .output}
-> {: .solution}
+> > 
+> 
 
 ---
 
@@ -428,3 +428,7 @@ just nicely put the files in the Trash. They're really gone.
 - The commands `cp`, `mv`, and `mkdir` are useful for manipulating existing files and creating new directories.
 - You can view file permissions using `ls -l` and change permissions using `chmod`.
 - The `history` command and the up arrow on your keyboard can be used to repeat recently used commands.
+
+---
+
+[Previous lesson: Navigating Files and Directories (02-the-filesystem.md)](02-the-filesystem.md) | [Next lesson: Redirection (04-redirection.md)](04-redirection.md)

@@ -214,7 +214,7 @@ to quit.
 > > ~~~
 > > $ ls -l
 > > ~~~
-> > {: .bash}
+> > 
 > > 
 > > ~~~
 > > total 12
@@ -222,13 +222,13 @@ to quit.
 > > drwxrwxr-x 2 vscode vscode 4096 Jun  3 18:02 mags
 > > drwxrwxr-x 3 vscode vscode 4096 Jun  3 18:25 taxonomy
 > > ~~~
-> > {: .output}
+> > 
 > > 
 > > The additional information given includes the name of the owner of the file,
 > > when the file was last modified, and whether the current user has permission
 > > to read and write to the file.
 > > 
-> {: .solution}
+> 
 
 No one can possibly learn all of these arguments, that's why the manual page
 is for. You can (and should) refer to the manual page or other help files
@@ -345,3 +345,7 @@ using the command line shell enables us to make our workflow more efficient and 
 - Useful commands for navigating your file system include: `ls`, `pwd`, and `cd`.
 - Most commands take options (flags) which begin with a `-`.
 - Tab completion can reduce errors from mistyping and make work more efficient in the shell.
+
+---
+
+[Next lesson: Navigating Files and Directories (02-the-filesystem.md)](02-the-filesystem.md)

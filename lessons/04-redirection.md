@@ -107,7 +107,7 @@ AAA11BB3333BGG1GGEC1E?0E0B0BFDGFHD2FBH110A1BEE?A/BAFBDGH///>FEGGG><@/#//?#?/#//?
 > >~~~
 > > $ grep -B1 GATCGAGAGGGGATAGGCG JC1A_R2.fastq
 > >~~~
->> {: .bash}
+>> 
 > > The output shows all of the lines that contain the sequence GATCGAGAGGGGATAGGCG. As the flag -B1 is used, it also shows the previous line to each occurence. In a FastQ file the identifier of each sequence is one line avobe the sequence itself, therefore in this example you can see the names and the sequences that match your query.
 > > 
 > >'2.To search for a sequence in all of the FastQ files you could use the asterisk `*` wildcard before the file extension `.fastq` :
@@ -116,7 +116,7 @@ AAA11BB3333BGG1GGEC1E?0E0B0BFDGFHD2FBH110A1BEE?A/BAFBDGH///>FEGGG><@/#//?#?/#//?
 > >~~~  
 > > In this case, the lines with the sequence AAGTT are shown for all of the files that end with '.fastq' in the current directory. The output shows the name of the file followed by semicolon to differentiate what file each line comes from.
 > > 
-> {: .solution}
+> 
 
 ## Redirecting output
 
@@ -182,14 +182,14 @@ four to get the number of sequences that match our search pattern.
 >> $ grep NNN JC1A_R2.fastq > bad_reads.txt
 >> $ wc -l bad_reads.txt
 >> ~~~
->> {: .bash}
+>> 
 >> 
 >> ~~~
 >596 bad_reads.txt
 >> ~~~
->> {: .output}
+>> 
 >>
-> {: .solution}
+> 
 
 We might want to search multiple FASTQ files for sequences that match our search pattern.
 However, we need to be careful, because each time we use the `>` command to redirect output
@@ -386,9 +386,9 @@ JP4D_R2
 >> > echo ${name}
 >> > done
 >> ~~~
->> {: .bash}
+>> 
 >>
-> {: .solution}
+> 
 
 One way this is really useful is to move files. Let's rename all of our .txt files using `mv` so that they have the years on them, which will document when we created them. 
 
@@ -410,3 +410,7 @@ $ for filename in *.txt
 - `command_1 | command_2` redirects the output of the first command as input to the second command.
 - for loops are used for iteration
 - `basename` gets rid of repetitive parts of names
+
+---
+
+[Previous lesson: Working with Files (03-working-with-files.md)](03-working-with-files.md) | [Next lesson: Writing Scripts (05-writing-scripts.md)](05-writing-scripts.md)

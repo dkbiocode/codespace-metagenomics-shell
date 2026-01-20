@@ -94,7 +94,7 @@ $ cd ../../..
 > > ~~~
 > > $ man ls
 > > ~~~
-> > {: .bash}
+> > 
 > > 
 > > The `-a` option is short for `all` and says that it causes `ls` to "not ignore
 > > entries starting with ." This is the option we want. 
@@ -102,12 +102,12 @@ $ cd ../../..
 > > ~~~
 > > $ ls -a
 > > ~~~
-> > {: .bash}
+> > 
 > > 
 > > ~~~
 > >.  ..  data  .hidden  mags  taxonomy
 > > ~~~
-> > {: .output}
+> > 
 > > 
 > > The name of the hidden directory is `.hidden`. We can navigate to that directory
 > > using `cd`. 
@@ -115,22 +115,22 @@ $ cd ../../..
 > > ~~~
 > > $ cd .hidden
 > > ~~~
-> > {: .bash}
+> > 
 > > 
 > > And then list the contents of the directory using `ls`. 
 > > 
 > > ~~~
 > > $ ls
 > > ~~~
-> > {: .bash}
+> > 
 > > 
 > > ~~~
 > > youfoundit.txt
 > > ~~~
-> > {: .output}
+> > 
 > > 
 > > The name of the text file is `youfoundit.txt`.
-> {: .solution}
+> 
 
 ### File permissions
 
@@ -259,8 +259,8 @@ navigate amongst them.
 > >  3. No: see previous explanation.
 > >    Also, we did not specify `-F` to display `/` at the end of the directory names.
 > >  4. Yes: `../backup` refers to `/Users/backup`.
-> {: .solution}
-{: .challenge} 
+> 
+ 
 
 
 The commands `cd`, and `cd ~` are very useful for quickly navigating back to your home directory. We will be using the `~` character in later lessons to specify our home directory.
@@ -271,3 +271,7 @@ The commands `cd`, and `cd ~` are very useful for quickly navigating back to you
 - The `/`, `~`, and `..` characters represent important navigational shortcuts.
 - Hidden files and directories start with `.` and can be viewed using `ls -a`.
 - Relative paths specify a location starting from the current location, while absolute paths specify a location from the root of the file system.
+
+---
+
+[Previous lesson: Introducing the Shell (01-introduction.md)](01-introduction.md) | [Next lesson: Working with Files (03-working-with-files.md)](03-working-with-files.md)
