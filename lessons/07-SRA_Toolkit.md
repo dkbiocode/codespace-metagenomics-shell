@@ -1,13 +1,13 @@
 # SRA Toolkit
 
 There are a lot of data in different repositories in the cloud. A lot of works have been 
-putting effort in sequencing genomic data to get the information needed to answer a miryad of 
+putting effort in sequencing genomic data to get the information needed to answer a myriad of 
 questions.
 One of the biggest repository-pages for genomic/metagenomic data is the National Certer for 
 Biotechnology Information (NCBI). Regardless of the big data that NCBI has hoarded in the last 
-decade, how to acess and download this data remains troublesome. Users around institutes have 
+decade, how to access and download this data remains troublesome. Users around institutes have 
 been facing the inconclusive path of going from a `Bioproject` page, to the `Biosample` 
-information, then jumped to the `SRA experiments` inmense list and return finally to the 
+information, then jumping to the `SRA experiments` immense list and returning finally to the 
 `Biosample` page. In order to download the desired data, we need to locate the *Accession* 
 number of the sample data, and type it in one of the `SRA Toolkit` tools. This is not trivial (It should be!), so let's go 
 to explore `SRA Toolkit`
@@ -15,12 +15,12 @@ to explore `SRA Toolkit`
 ## fasterq-dump 
 
 In ancient times (before the sra-tools version 2.9.1), `fastq-dump` was the tool used by 
-deafult to access public dat in NCBI. But, with the 2.9.1 version, `fasterq-dump` became
-available. It is faster than its predecesor and a little bit more intuitive that the former 
-. `fastq-dump` is still available, but the line of thought of the developers is to erase it sooner than latter.
+default to access public data in NCBI. But, with the 2.9.1 version, `fasterq-dump` became
+available. It is faster than its predecessor and a little bit more intuitive than the former 
+. `fastq-dump` is still available, but the line of thought of the developers is to erase it sooner than later.
 
 ### Creating a folder for the data
-It is important to maintain onder in your projects. This extrapolates to the tools used inside
+It is important to maintain order in your projects. This extrapolates to the tools used inside
 each one of them. We will create a folder inside our workspace where we will save the downloaded data:
 
 ~~~
@@ -37,7 +37,7 @@ Inside this folder, we will download the data that we will use the rest of the l
 
 ### Accessing to the data
 
-Uploadig the data used in a research project is now a must for the majority of the magazines.
+Uploading the data used in a research project is now a must for the majority of the journals.
 We will go to the [paper-page](https://www.tandfonline.com/doi/full/10.1080/21678421.2021.1904994?scroll=top&needAccess=true) to access to the data-page from the NCBI.
 In this page, we will go to the aknowledgements section, were the 
 **Data availability statement** is found.
@@ -49,11 +49,11 @@ In this page, we will go to the aknowledgements section, were the
 
 ###### Figure 1. Data availability section in the paper-page
 
-Here, we will found the `Bioproject` number. This is a identification-code, linked to a page
+Here, we will find the `Bioproject` number. This is a identification-code, linked to a page
 where the information concerning a project and its data is hoarded. For this paper, the number
 is: `PRJNA566436`. 
-With this information, we can open a NCBI page in our favorite internet brower, and paste this
-code in the search section. Then, a new pag with the search results will be displayed. Here, 
+With this information, we can open a NCBI page in our favorite internet browser, and paste this
+code in the search section. Then, a new pae with the search results will be displayed. Here, 
 we will choose the `human gut metagenome` option:
 
 <a href="../fig/02-07-02.png">
@@ -66,7 +66,7 @@ we will choose the `human gut metagenome` option:
 
 In the new displayed page, we can see different pieces of information. We are interested in the
 **Project Data** section, which shows in a table, the sequence data. NCBI saves each set of
-files (usually libraries) in a `Sequence Read Archive` (SRA). This will be the identifiaction
+files (usually libraries) in a `Sequence Read Archive` (SRA). This will be the identification
 code that we will search if we want to download the data. We will click on the number of 
 **SRA experiments**, which is **18**:
 
@@ -134,7 +134,7 @@ SRR10153515
 
 ### Using faterq-dump to download the data
 
-As mentioned at the beggining, `fasterq-dump` is the new version of `fastq-dump`. Let's see 
+As mentioned at the beginning, `fasterq-dump` is the new version of `fastq-dump`. Let's see 
 some of the parameters that this new tool can offer:
 ~~~
 $ fasterq-dump --help
@@ -161,21 +161,21 @@ along the 4 lines usual in the `FASTQ` format
 #### ---split-file (-S)
 
 With this statement, we will end with separate files for the forward and the reverse reads
-(1.fastq and 2.fastq respectively). Nevertheless, the unmated reads (those present in
-the forward but without their complement in reverse and visceversa) will also be located
-in their respective file. This can be useful for special kind of analyses, but usually we
-will prefer to exclude the unmated reads from the next steps. Moreoevee, this option
+(1.fastq and 2.fastq respectively). Nevertheless, the unmatched reads (those present in
+the forward but without their complement in reverse and viceversa) will also be located
+in their respective file. This can be useful for special kinds of analyses, but usually we
+will prefer to exclude the unmatched reads from the next steps. Moreoever, this option
 will write each read with the four lines from the `FASTQ` format.
 
 #### --concatenate-reads
 
-The informatio of each read is concatenated and each new spot (information from the forward
+The information of each read is concatenated and each new spot (information from the forward
 and reverse) is written alongside the four lines characteristic of the `FASTQ` format.
 
 #### --split-spot
 
 This is the deafult option for `fasterq-dump`. The source file is split in a file containing
-the forward reads (_i.e._ 1.fastq) and the reverse ones (_i.e._ 2.fastq). Unmated reads are placed in a 3.fastq or SRA-code-name file. Each read is written with the 4 characteristic
+the forward reads (_i.e._ 1.fastq) and the reverse ones (_i.e._ 2.fastq). Unmatched reads are placed in a 3.fastq or SRA-code-name file. Each read is written with the 4 characteristic
 lines of the `FASTQ` format.
 Most of the sequencing projects are now in paired-end read format. This is also the case for 
 the reads that we will use, so this is the most reliable option.
@@ -269,8 +269,8 @@ SRR10153499_2.fastq
 ~~~
 
 
-Since `fasterq-dumb` does not take multiple accesions just one, we will do a `while` cycle
-to proccess all the accessions in the `SRA-names.txt`:
+Since `fasterq-dump` does not take multiple accessions just one, we will do a `while` loop
+to process all the accessions in the `SRA-names.txt`:
 
 ~~~
 cat SRA-accessions.txt | sed -n '1!p'| while read line; do fasterq-dump $line -p -e 2; done
@@ -314,9 +314,9 @@ SRR10153503_1.fastq  SRR10153508_1.fastq  SRR10153513_1.fastq
 
 Now, we have the 36 files (2 for every one of the 18 samples) that we will use in the next 
 lessons. 
-`fasterq-dump` is a useful tool to access to public data. Since the explotion of the 
-next-generation sequencing technologies, it is imperative for publicable research projects 
-to upload their data. This is a useful resource for learnes, students and professors to 
+`fasterq-dump` is a useful tool to access to public data. Since the explosion of the 
+next-generation sequencing technologies, it is imperative for publishable research projects 
+to upload their data. This is a useful resource for learners, students and professors to 
 use the already scrutinized data to practice, run newly-develop tools, and teach exercises.
 
 
