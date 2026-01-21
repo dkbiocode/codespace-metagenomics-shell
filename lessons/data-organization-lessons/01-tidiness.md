@@ -154,7 +154,7 @@ even separate the genus and species names into distinct columns.
 - Export the cleaned data to a text-based format like CSV (comma-separated values). 
 This format ensures that anyone can use the data required by most data repositories.
 
-[![Messy spreadsheet](../../fig/fig-organization/01_tidiness_datasheet_example_messy.png)](https://github.com/datacarpentry/organization-genomics/raw/gh-pages/files/Ecoli_metadata_composite_messy.xlsx)
+[![Messy spreadsheet](../../fig/data-organization-fig/01_tidiness_datasheet_example_messy.png)](https://github.com/datacarpentry/organization-genomics/raw/gh-pages/files/Ecoli_metadata_composite_messy.xlsx)
 
 > ## Discussion 4. Spreadsheet organization.
 > This is a potential spreadsheet data generated about a sequencing experiment. With the person next to you, for about 2 minutes, discuss some problems with the spreadsheet data shown above. You can look at the image or download the file to your computer via this [link](https://github.com/datacarpentry/organization-genomics/raw/gh-pages/files/Ecoli_metadata_composite_messy.xlsx) and open it in a spreadsheet reader like Excel. 
