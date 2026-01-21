@@ -17,7 +17,7 @@
 
 ## Key Points
 
-- Assigning and keeping track of appropriate unique ID identifiers must be a well-thought process.
+- Assigning and keeping track of appropriate unique ID identifiers must be a well-thought-out process.
 - Metadata is key for you and others to work with your data.
 - Tabular data needs to be structured to work with it effectively.
 - Human microbiome data requires informed consent and confidentiality.
@@ -57,7 +57,7 @@ i.e., data about the data. We want to follow a few guidelines for metadata.
 Notes about your experiment, including how you prepared your samples for sequencing, 
 should be in your lab notebook, whether a physical lab notebook or an electronic one. 
 For guidelines on good lab notebooks, see the Howard Hughes Medical Institute 
-"Making the Right Moves: A Practical Guide to Scientifıc Management for Postdocs and New Faculty" 
+"Making the Right Moves: A Practical Guide to Scientific Management for Postdocs and New Faculty" 
 the section on [Data Management and Laboratory Notebooks](http://www.hhmi.org/sites/default/files/Educational%20Materials/Lab%20Management/Making%20the%20Right%20Moves/moves2_ch8.pdf).
 
 
@@ -80,14 +80,14 @@ Alongside the spreadsheet, creating a text file called **README** is convenient.
 This file holds information about the research project, how the samples were generated, 
 and how to read the metadata spreadsheet. 
 This information is very convenient when working on a team, and more
-people join the project even at different 
-experiment steps. This order may help better your collaborators to easily understand 
+people join the project even at different
+experiment steps. This will help your collaborators to better understand
 what the data is about.
 
 > ## Metadata standards
 > The kind of data you would collect depends on your experiment; often, there are guidelines from metadata standards.
 > Many fields have particular ways that they structure their metadata, so it is consistent and can be used across the area. The Digital Curation Center maintains 
-> [a list of metadata standards](http://www.dcc.ac.uk/resources/metadata-standards/list) and some that are particularly relevant for genomics data are available from the [Genomics Standards Consortium](https://www.gensc.org/pages/projects.html). In particular, assembly quality and an estimate of genome completeness and contamination are [standards for Metagenome-Assambled-Genomes](https://www.nature.com/articles/nbt.3893) (MAGs).  
+> [a list of metadata standards](http://www.dcc.ac.uk/resources/metadata-standards/list) and some that are particularly relevant for genomics data are available from the [Genomics Standards Consortium](https://www.gensc.org/pages/projects.html). In particular, assembly quality and an estimate of genome completeness and contamination are [standards for Metagenome-Assembled-Genomes](https://www.nature.com/articles/nbt.3893) (MAGs).  
 >
 > Cornell University gives us a useful [guide](https://data.research.cornell.edu/content/readme) and template [file](https://github.com/nselem/organization-metagenomics/blob/master/files/AUTHOR_DATASET_ReadmeTemplate.txt) to write README-style metadata in case 
 > there are no metadata standards for your type of data. When you submit data to an organization, they may give you a file with specifications about  
@@ -112,7 +112,7 @@ what the data is about.
 
 
 > ## Discussion 3: Ethical considerations in microbiome studies
-> The microbiomes knowledge is human's global heritage and must be ruled by ethical principles such as do good, do not harm, respect, and act justly.
+> Microbiome knowledge is humanity's global heritage and must be ruled by ethical principles such as do good, do not harm, respect, and act justly.
 > While studying the human microbiome, there are particular concerns. For example, if you discover an infection such as HIV in the blood microbiome, would you inform the participants? What If they did not want to know? Following these principles, what other ethical considerations can you think about human microbiomes? 
 > > ## Solution
 > > 1. Respect: Ask participants to sign explicit prior informed consent.  
@@ -143,7 +143,7 @@ the subjects for which we store information in the spreadsheet.
 that we have about our sample (its genotype, phenotype, treatment, etc.). 
 - Have column names explanatory but without spaces. Use '-', '_' or 
 [camel case](https://en.wikipedia.org/wiki/Camel_case) instead of a space. 
-For instance, 'library-prep-method' or 'LibraryPrep'is better than 'library preparation method' 
+For instance, 'library-prep-method' or 'LibraryPrep' is better than 'library preparation method' 
 or 'prep', because computers interpret spaces in particular ways.
 - Do not combine multiple pieces of information in one cell. Sometimes it just seems 
 like one thing, but think if that is the only way you will want to be able to use or sort that data. 

@@ -40,8 +40,8 @@ methods and approaches we need in bioinformatics are the same ones we need at th
 > How can you be sure that your raw data has not been unintentionally corrupted?  
 > 
 > > ## Solution
-> > With large datasets is hard to have enough storage space for your data and your results, 
-> > and is hard to anticipate how much disc space and processing time you need for every step of 
+> > With large datasets it is hard to have enough storage space for your data and your results,
+> > and it is hard to anticipate how much disc space and processing time you need for every step of 
 > > your pipelines, including intermediate files and results.  
 > > It is hard to identify errors when you have too many files and too many observations in a spreadsheet.  
 > > Some programs may not work or perform poorly with many files.
@@ -153,8 +153,6 @@ and asking for help are all valid ways of solving your problems. As you complete
 > More reading about core competencies 
 >
 >L. Welch, F. Lewitter, R. Schwartz, C. Brooksbank, P. Radivojac, B. Gaeta and M. Schneider, '[Bioinformatics Curriculum Guidelines: Toward a Definition of Core Competencies](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3945096/)', PLoS Comput Biol, vol. 10, no. 3, p. e1003496, 2014.
->
-> {: .source}
 
 
 ---

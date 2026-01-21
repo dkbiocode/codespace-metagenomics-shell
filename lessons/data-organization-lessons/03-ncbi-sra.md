@@ -26,7 +26,7 @@ There are many repositories for public data. Some model organisms or fields have
 
 ## Accessing the original archived data
 
-The [sequencing dataset (from Okie *et al.* 2020) adapted for this workshop](https://doi.org/10.5281/zenodo.4285900) was obtained from the [NCBI Sequence Read Archive](http://www.ncbi.nlm.nih.gov/sra), which is a large (~27 petabasepairs/2.7 x 10^16 basepairs as of April 2019) repository for next-generation sequence data. Like many NCBI databases, it is complex, and mastering its use is greater than the scope of this lesson. The papers will often have a direct link (perhaps in the supplemental information) to where the SRA dataset can be found. We are only using a small part of the Okie *et al.* 2020 dataset, so a direct link cannot be found. 
+The [sequencing dataset (from Okie *et al.* 2020) adapted for this workshop](https://doi.org/10.5281/zenodo.4285900) was obtained from the [NCBI Sequence Read Archive](http://www.ncbi.nlm.nih.gov/sra), which is a large (~27 petabase pairs/2.7 x 10^16 base pairs as of April 2019) repository for next-generation sequence data. Like many NCBI databases, it is complex, and mastering its use is greater than the scope of this lesson. The papers will often have a direct link (perhaps in the supplemental information) to where the SRA dataset can be found. We are only using a small part of the Okie *et al.* 2020 dataset, so a direct link cannot be found. 
 
 ## Using the SRA Run Selector
 
@@ -36,7 +36,7 @@ The next image shows the study's title, "_Genomic adaptations in information pro
 
 <img style='border:1px solid #000000' src="../../fig/fig-organization/01-03-01.png" width="800" alt="Screenshot of the cover page of the article named: Genomic adaptations in information processing underpin trophic strategy in a whole-ecosystem nutrient enrichment experiment"/>
 
-The image below shows an excerpt from the paper that includes information on locating the sequence data. In this case, this text occurs just before the reference section. In the section data availability, the image says that data and metadata have been submitted to the Sequence Reading Archive (SRA) in NCBI and are accessible through the BioProject PRJEB22811. Notice that metadata registers that year was 2017, the place was Cuatro Cienegas Lagunita, the experiment was a fertilization one, and the author is The Craig Venter´s institute.
+The image below shows an excerpt from the paper that includes information on locating the sequence data. In this case, this text occurs just before the reference section. In the section data availability, the image shows that data and metadata have been submitted to the Sequence Reading Archive (SRA) in NCBI and are accessible through the BioProject PRJEB22811. The metadata indicates that the year was 2017, the place was Cuatro Cienegas Lagunita, the experiment was a fertilization study, and the author is The J. Craig Venter Institute.
 
 <img style='border:1px solid #000000' src="../../fig/fig-organization/01-03-02.png" width="800" alt="Screenshot of the section of the article called Additional file. It shows the following text: Supplementary files: Source data 1. Data on the metagenomic traits and concentrations of seston chlorophyll a, phosphorus, nitrogen, and carbon in water samples from Lagunitas pond, Cuatro ciénegas, Mexico. Data availability: Raw sequence data and metadata have been submitted to the NCBI Sequence Read Archive, accessible through BioProject PRJEB228811. The following dataset was generated: Author(s): J Craig Venter Institute, Year: 2017, Dataset title: Cuatro Ciénegas Lagunita Fertilization Experiment, Database, and Identifier: NCBI BioProject, PREJB22811, Dataset URL"/>
 
@@ -55,7 +55,7 @@ Follow the next steps to access the data in the SRA using the information in thi
 6. Notice on this page, there are three sections. “Common Fields”, “Select”, and “Found 40 Items”. The sections "Select" and "Found 40 items" are shown in the next image. Select contains information about the run size and the data and metadata table. The "Found 40 items section" is a table where each row contains  id numbers, an alias name, size and links to data for one sample. Within “Found 40 Items”, click on the first Run number (Column “Run”, Row “1”). 
 <img style='border:1px solid #000000' src="../../fig/fig-organization/01-03-04.png" width="800" alt="Screenshot of the sections Select and Found 40 Items"/>
 
-7. This will take you to a page that is a **Run Browser**. Take a few minutes to examine some of the descriptions on the page. In the image we see the  SRA entry **ERR2143758**.  This metadata tab displays run's quality and GC content among other information.
+7. This will take you to a page that is a **Run Browser**. Take a few minutes to examine some of the descriptions on the page. In the image we see the  SRA entry **ERR2143758**.  This metadata tab displays the run's quality and GC content among other information.
 <img style='border:1px solid #000000' src="../../fig/fig-organization/01-03-05.png" width="800" alt="Screenshot of details for the selected run. It shows the details of the sequence file, a quality graph, the metadata, the Biosample details, and BioProject details."/>
 
 8. Use the browser’s back button to go back to the 'previous page'. As shown in the figure below, the second section of the page (“Select”) has the **Total** row showing you the current number of “Runs”, “Bytes”, and “Bases” in the dataset to date. On 2012-06-27, there were 40 runs, 9.86 GBytes of data, and 19.61 Gbases. 
@@ -85,7 +85,7 @@ Follow the next steps to access the data in the SRA using the information in thi
 > > ## Solution
 > > 1. The Illumina sequencing platform was used, shown in the column "Platform". The column "Instrument" 
 > > shows which type of Illumina sequencer was used, in this case, Illumina MiSeq.  
-> > 2. The "LibraryLayout" column shows that all samples contain paired-end data.v  
+> > 2. The "LibraryLayout" column shows that all samples contain paired-end data.  
 > > 3. Technology and instruments are good examples of the types of metadata that can exist for a sequenced biological sample. 
 > > There is technical information, like "Assay Type" and "DATASTORE filetype", information about the sequences 
 > > like "Bases" and biological metadata like "environment_(biome)" and "potassium_ppm".  
@@ -97,7 +97,7 @@ After answering the questions, you should avoid saving any changes you might hav
 
 > ## Discussion 2: Exploring the European Nucleotide Archive
 >
-> Navigate to the [ENA](https://www.ebi.ac.uk/ena) and search the BioProject "PRJEB22811". Explore the ENA Browser and discuss it with your 
+> Navigate to the [ENA](https://www.ebi.ac.uk/ena) and search the BioProject "PRJEB22811". Explore the ENA Browser and discuss with your
 > neighbor the differences between the ENA Browser and the SRA Run Selector.
 >
 
