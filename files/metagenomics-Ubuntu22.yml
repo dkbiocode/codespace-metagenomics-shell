@@ -1,4 +1,4 @@
-name: metagenomics
+name: dc-metagenomics
 channels:
   - bioconda
   - conda-forge
