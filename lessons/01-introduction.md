@@ -1,9 +1,9 @@
 <!-- If you are in VS-Code, click in this window and do Shift-Ctrl/Command-V to view      -->
 <!-- rendered text and links. This will open an editor tab labeled "Preview [this file]"  -->
 
-# Introducing the Shell
-
 [Next lesson: Navigating Files and Directories (02-the-filesystem.md)](02-the-filesystem.md)
+
+# Introducing the Shell
 
 <!-- >> Teaching: 20 min | Exercises: 10 min -->
 

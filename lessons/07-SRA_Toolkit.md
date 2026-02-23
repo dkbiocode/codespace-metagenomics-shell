@@ -1,3 +1,8 @@
+<!-- If you are in VS-Code, click in this window and do Shift-Ctrl/Command-V to view      -->
+<!-- rendered text and links. This will open an editor tab labeled "Preview [this file]"  -->
+
+[Previous lesson: Project Organization (06-organization.md)](06-organization.md)
+
 # SRA Toolkit
 
 There are a lot of data in different repositories in the cloud. A lot of works have been 

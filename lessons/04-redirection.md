@@ -1,3 +1,8 @@
+<!-- If you are in VS-Code, click in this window and do Shift-Ctrl/Command-V to view      -->
+<!-- rendered text and links. This will open an editor tab labeled "Preview [this file]"  -->
+
+[Previous lesson: Working with Files (03-working-with-files.md)](03-working-with-files.md) | [Next lesson: Writing Scripts (05-writing-scripts.md)](05-writing-scripts.md)
+
 # Redirection
 
 > Teaching: 30 min | Exercises: 15 min

@@ -1,3 +1,8 @@
+<!-- If you are in VS-Code, click in this window and do Shift-Ctrl/Command-V to view      -->
+<!-- rendered text and links. This will open an editor tab labeled "Preview [this file]"  -->
+
+[Previous lesson: Redirection (04-redirection.md)](04-redirection.md) | [Next lesson: Project Organization (06-organization.md)](06-organization.md)
+
 # Writing Scripts and Working with Data
 
 > Teaching: 20 min | Exercises: 20 min

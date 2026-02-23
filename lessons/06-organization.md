@@ -1,3 +1,9 @@
+<!-- If you are in VS-Code, click in this window and do Shift-Ctrl/Command-V to view      -->
+<!-- rendered text and links. This will open an editor tab labeled "Preview [this file]"  -->
+
+[Previous lesson: Writing Scripts (05-writing-scripts.md)](05-writing-scripts.md) | [Next lesson: SRA Toolkit (07-SRA_Toolkit.md)](07-SRA_Toolkit.md)
+
+
 # Project Organization
 
 > Teaching: 15 min | Exercises: 15 min

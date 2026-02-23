@@ -1,11 +1,10 @@
 <!-- If you are in VS-Code, click in this window and do Shift-Ctrl/Command-V to view      -->
 <!-- rendered text and links. This will open an editor tab labeled "Preview [this file]"  -->
 
-# Working with Files and Directories
 
 [Previous lesson: Navigating Files and Directories (02-the-filesystem.md)](02-the-filesystem.md) | [Next lesson: Redirection (04-redirection.md)](04-redirection.md)
 
-
+# Working with Files and Directories
 
 <!-- >> Teaching: 30 min | Exercises: 15 min -->
 

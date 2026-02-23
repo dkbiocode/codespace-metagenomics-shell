@@ -1,8 +1,9 @@
 <!-- If you are in VS-Code, click in this window and do Shift-Ctrl/Command-V to view      -->
 <!-- rendered text and links. This will open an editor tab labeled "Preview [this file]"  -->
-# Navigating Files and Directories
 
 [Previous lesson: Introducing the Shell (01-introduction.md)](01-introduction.md) | [Next lesson: Working with Files (03-working-with-files.md)](03-working-with-files.md)
+
+# Navigating Files and Directories
 
 <!-- >> Teaching: 30 min | Exercises: 20 min -->
 
