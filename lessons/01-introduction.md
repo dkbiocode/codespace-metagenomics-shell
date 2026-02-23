@@ -1,6 +1,11 @@
+<!-- If you are in VS-Code, click in this window and do Shift-Ctrl/Command-V to view      -->
+<!-- rendered text and links. This will open an editor tab labeled "Preview [this file]"  -->
+
 # Introducing the Shell
 
-> Teaching: 20 min | Exercises: 10 min
+[Next lesson: Navigating Files and Directories (02-the-filesystem.md)](02-the-filesystem.md)
+
+<!-- >> Teaching: 20 min | Exercises: 10 min -->
 
 ## Questions
 
@@ -40,13 +45,13 @@ There are many reasons to learn about the shell.
 have extra capabilities in the command line version that are not available in the GUI.
 This is true, for example, of BLAST, which offers many advanced functions only accessible
 to users who know how to use a shell.  
-* The shell makes your work less boring. In bioinformatics you often need to do
+* *The shell makes your work less boring.* In bioinformatics you often need to do
 the same set of tasks with a large number of files. Learning the shell will allow you to
 automate those repetitive tasks and leave you free to do more exciting things.  
-* The shell makes your work less error-prone. When humans do the same thing a hundred different times
+* *The shell makes your work less error-prone.* When humans do the same thing a hundred different times
 (or even ten times), they're likely to make a mistake. Your computer can do the same thing a thousand times
 with no mistakes.  
-* The shell makes your work more reproducible. When you carry out your work in the command-line 
+* *The shell makes your work more reproducible.* When you carry out your work in the command-line 
 (rather than a GUI), your computer keeps a record of every step that you've carried out, which you can use 
 to re-do your work when you need to. It also gives you a way to communicate unambiguously what you've done, 
 so that others can check your work or apply your process to new data.  
@@ -58,16 +63,8 @@ In this lesson you will learn how to use the command line interface to move arou
 
 ## How to access the shell
 
-On a Mac or Linux machine, you can access a shell through a program called Terminal, which is already available
-on your computer. If you're using Windows, you'll need to download a separate program to access the shell (see installation instructions [here](https://carpentries-incubator.github.io/metagenomics-workshop/setup.html)).
-
-In this workshop, we'll be using GitHub Codespaces, a cloud-based development environment that already includes the required tools and datasets. This allows us to focus on learning shell basics rather than dealing with installations.
-
-> ## Shell alternatives
->
-> If you're using GitHub Codespaces, you're already connected to a terminal environment - no SSH required!
-> If you prefer to work on your local machine, you can follow along but may need to adjust some paths.
->
+In this workshop, we'll be using VS-Code in GitHub Codespaces, but if you are using it VS-Code Server using On Demand on your HPC, it is the same!
+Notice the pane below this editor/Preview window pane. It has several headings (such as PROBLEMS, OUTPUT, DEBUG CONSOLE, TERMINAL, and PORTS). We will use **TERMINAL**.
 
 If you're using GitHub Codespaces, you should already have a terminal open. If not, you can open one from the menu (Terminal → New Terminal) or by pressing <kbd>Ctrl</kbd>+<kbd>`</kbd>.
 

@@ -1,6 +1,13 @@
+<!-- If you are in VS-Code, click in this window and do Shift-Ctrl/Command-V to view      -->
+<!-- rendered text and links. This will open an editor tab labeled "Preview [this file]"  -->
+
 # Working with Files and Directories
 
-> Teaching: 30 min | Exercises: 15 min
+[Previous lesson: Navigating Files and Directories (02-the-filesystem.md)](02-the-filesystem.md) | [Next lesson: Redirection (04-redirection.md)](04-redirection.md)
+
+
+
+<!-- >> Teaching: 30 min | Exercises: 15 min -->
 
 ## Questions
 
@@ -36,10 +43,10 @@ have four result files, which are stored in our `untrimmed_fastq` directory.
 Navigate to your `untrimmed_fastq` directory.
 
 ~~~
-$ cd /workspaces/codespace-metagenomics-shell/dc_workshop/data/untrimmed_fastq
+$ cd dc_workshop/data/untrimmed_fastq
 ~~~
 
-We are interested in looking at the FASTQ files in this directory. We can list
+We are interested in looking at the FASTQ files in this directory. Remember, gunzipped the fastq.gz files in lesson 1, which replaced all of the .fastq.gz compressed files (binary) with .fastq files (text). We can list
 all files with the `.fastq` extension using the command:
 
 ~~~
@@ -403,22 +410,8 @@ just nicely put the files in the Trash. They're really gone.
 > 3. Use a wildcard to move all of your backup files to a new backup directory.   
 > 4. Change the permissions on all of your backup files to be write-protected.  
 >
-> > ## Solution
-> >
-> > 1. `rm -r backup`  
-> > 2. `cp JC1A_R1.fastq JC1A_R1-backup.fastq`, `cp JC1A_R2.fastq JC1A_R2-backup.fastq`, `cp JP4D_R1.fastq JP4D_R1-backup.fastq`  
-> > and `cp JP4D_R2.fastq JP4D_R2-backup.fastq` 
-> > 3. `mkdir backup` and `mv *-backup.fastq backup`
-> > 4. `chmod -w backup/*-backup.fastq`   
-> > It's always a good idea to check your work with `ls -l backup`. You should see something like: 
-> > 
-> > ~~~
-> > -r--r--r-- 1 vscode vscode  24203913 Jun 17 23:08 JC1A_R1-backup.fastq
-> > -r--r--r-- 1 vscode vscode  24917444 Jun 17 23:10 JC1A_R2-backup.fastq
-> > -r--r--r-- 1 vscode vscode 186962503 Jun 17 23:10 JP4D_R1-backup.fastq
-> > -r--r--r-- 1 vscode vscode 212161034 Jun 17 23:10 JP4D_R2-backup.fastq
-> > ~~~
-> > 
+> 
+> [See solution to exercise 1](03-working-with-files-exercises/Exercise-1-solution.md)
 > 
 
 ---
