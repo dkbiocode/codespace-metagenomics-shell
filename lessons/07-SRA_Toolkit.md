@@ -335,9 +335,7 @@ use the already scrutinized data to practice, run newly-develop tools, and teach
 > Please, paste your result on the collaborative document provided by instructors. 
 > *Hic Sunt Leones!* (*Here be Lions!*)  
 >
->> ## Solution
->> Answer: 17
-> 
+> [Click to view solution](.07-sra_toolkit-exercises/lesson-7-exercise-1-solution.md)
 
 
 ---
