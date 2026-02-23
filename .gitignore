@@ -1,3 +1,6 @@
+dc_workshop*
+data
+
 *.pyc
 *~
 .DS_Store
