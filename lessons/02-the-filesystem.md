@@ -117,10 +117,8 @@ characters relate to the permissions that the file owner has, the next three rel
 three characters specify what other users outside of your group can do with the file. We're going to concentrate on the three positions
 that deal with your permissions (as the file owner). 
 
-<img src="../fig/02-02-01.svg" alt="File permission parameters" />
-<a href="../fig/02-02-01.svg">
-  <img src="../fig/02-02-01.svg" width="870" height="631" alt="The file permission parameters described in the text (-rw-rw-r--) showing which of the slots correspond to who has permissions, and a legend showing the meaning of the letters."/>
-</a>
+<img src="../fig/02-02-01.svg" width="652" alt="The file permission parameters described in the text (-rw-rw-r--) showing which of the slots correspond to who has permissions, and a legend showing the meaning of the letters."/>
+
 Here the three positions that relate to the file owner are `rw-`. The `r` means that you have permission to read the file, the `w` 
 indicates that you have permission to write to (i.e. make changes to) the file, and the third position is a `-`, indicating that you 
 don't have permission to carry out the ability encoded by that space (this is the space where `x` or executable ability is stored, we'll 
@@ -207,7 +205,7 @@ navigate amongst them.
 > ## Exercise 2: Relative path resolution
 > 
 > Using the filesystem diagram below, if `pwd` displays `/Users/thing`,
-> what will `ls ../backup` display?
+> which of the following will `ls ../backup` display?
 > 
 > 1.  `../backup: No such file or directory`
 > 2.  `2012-12-01 2013-01-08 2013-01-27`
@@ -216,7 +214,8 @@ navigate amongst them.
 > 
 > <img src="../fig/filesystem-challenge.svg" alt="Filesystem diagram with folders: Users/thing/backup/2012-12-02, Users/thing/backup/2012-01-08, Users/thing/backup/2013-01-27, Users/backup/original, Users/backup/pnas_final, and Users/backup/pnas_sub" />
 > 
-> [See Solution to Exercise 1](.02-the-filesystem-exercises/lesson-2-exercise-1-solution.md) 
+
+> [See Solution to Exercise 2](.02-the-filesystem-exercises/lesson-2-exercise-2-solution.md) 
 
 
 The commands `cd`, and `cd ~` are very useful for quickly navigating back to your home directory. We will be using the `~` character in later lessons to specify our home directory.
