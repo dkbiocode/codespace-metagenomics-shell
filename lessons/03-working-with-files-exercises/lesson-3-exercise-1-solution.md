@@ -1,4 +1,4 @@
-## Exercise 1 solution
+## Lesson 3 Exercise 1 solution
 
 [Back to exercise 1](../03-working-with-files.md#exercise-1-make-backup-folder-with-write-protected-permissions)
 
