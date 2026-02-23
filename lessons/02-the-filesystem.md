@@ -93,7 +93,7 @@ $ cd ../../..
 > Hint: hidden files and folders in Unix start with `.`, for example `.my_hidden_directory`
 >
 
-[Solution](02-the-filesystem-exercises/lesson-2-exercise-1-solution.md)
+[See Solution to Exercise 1](.02-the-filesystem-exercises/lesson-2-exercise-1-solution.md)
 
 
 ### File permissions
@@ -216,15 +216,7 @@ navigate amongst them.
 > 
 > <img src="../fig/filesystem-challenge.svg" alt="Filesystem diagram with folders: Users/thing/backup/2012-12-02, Users/thing/backup/2012-01-08, Users/thing/backup/2013-01-27, Users/backup/original, Users/backup/pnas_final, and Users/backup/pnas_sub" />
 > 
-> > ## Solution
-> >  1. No: there *is* a directory `backup` in `/Users`.
-> >  2. No: this is the content of `Users/thing/backup`,
-> >   but with `..` we asked for one level further up.
-> >  3. No: see previous explanation.
-> >    Also, we did not specify `-F` to display `/` at the end of the directory names.
-> >  4. Yes: `../backup` refers to `/Users/backup`.
-> 
- 
+> [See Solution to Exercise 1](.02-the-filesystem-exercises/lesson-2-exercise-1-solution.md) 
 
 
 The commands `cd`, and `cd ~` are very useful for quickly navigating back to your home directory. We will be using the `~` character in later lessons to specify our home directory.
