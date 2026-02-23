@@ -207,25 +207,8 @@ to quit.
 > in the directory. What is one piece of additional information this long format
 > gives you that you don't see with the bare `ls` command?
 >
-> > ## Solution
-> > ~~~
-> > $ ls -l
-> > ~~~
-> > 
-> > 
-> > ~~~
-> > total 12
-> > drwxr-xr-x 3 vscode vscode 4096 Jun  3 17:59 data
-> > drwxrwxr-x 2 vscode vscode 4096 Jun  3 18:02 mags
-> > drwxrwxr-x 3 vscode vscode 4096 Jun  3 18:25 taxonomy
-> > ~~~
-> > 
-> > 
-> > The additional information given includes the name of the owner of the file,
-> > when the file was last modified, and whether the current user has permission
-> > to read and write to the file.
-> > 
-> 
+> [See solution to exercise 1](.01-introduction-exercises/lesson-1-exercise-1-solution.md)
+
 
 No one can possibly learn all of these arguments, that's why the manual page
 is for. You can (and should) refer to the manual page or other help files
