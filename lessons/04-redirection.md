@@ -102,21 +102,7 @@ AAA11BB3333BGG1GGEC1E?0E0B0BFDGFHD2FBH110A1BEE?A/BAFBDGH///>FEGGG><@/#//?#?/#//?
 > Have your search return all matching lines and the name (or identifier) for each sequence
 > that contains a match.
 > 
-> > ## Solution
-> > 1. To search for the GATCGAGAGGGGATAGGCG sequence in the file JC1A_R2.fastq:
-> > ~~~
-> > $ grep -B1 GATCGAGAGGGGATAGGCG JC1A_R2.fastq
-> > ~~~
-> >
-> > The output shows all of the lines that contain the sequence GATCGAGAGGGGATAGGCG. As the flag -B1 is used, it also shows the previous line to each occurence. In a FastQ file the identifier of each sequence is one line above the sequence itself, therefore in this example you can see the names and the sequences that match your query.
-> >
-> > 2. To search for a sequence in all of the FastQ files you could use the asterisk `*` wildcard before the file extension `.fastq` :
-> >~~~
-> > $ grep -B1 AAGTT *.fastq
-> >~~~  
-> > In this case, the lines with the sequence AAGTT are shown for all of the files that end with '.fastq' in the current directory. The output shows the name of the file followed by semicolon to differentiate what file each line comes from.
-> > 
-> 
+> [Click to view solution](.04-redirection-exercises/lesson-4-exercise-1-solution.md)
 
 ## Redirecting output
 
@@ -175,21 +161,8 @@ four to get the number of sequences that match our search pattern.
 >
 > How many sequences in `JC1A_R2.fastq` contain at least 3 consecutive Ns?
 >
->> ## Solution
->>  
->>
->> ~~~
->> $ grep NNN JC1A_R2.fastq > bad_reads.txt
->> $ wc -l bad_reads.txt
->> ~~~
->> 
->> 
->> ~~~
-> 596 bad_reads.txt
->> ~~~
->> 
->>
-> 
+> [Click to view solution](.04-redirection-exercises/lesson-4-exercise-2-solution.md)
+
 
 We might want to search multiple FASTQ files for sequences that match our search pattern.
 However, we need to be careful, because each time we use the `>` command to redirect output
@@ -376,19 +349,8 @@ JP4D_R2
 >
 > Print the file prefix of all of the `.txt` files in our current directory.
 >
->> ## Solution
->>  
->>
->> ~~~
->> $ for filename in *.txt
->> > do
->> > name=$(basename ${filename} .txt)
->> > echo ${name}
->> > done
->> ~~~
->> 
->>
-> 
+> > [Click to view solution](.04-redirection-exercises/lesson-4-exercise-3-solution.md)
+
 
 One way this is really useful is to move files. Let's rename all of our .txt files using `mv` so that they have the years on them, which will document when we created them. 
 

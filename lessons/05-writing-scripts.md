@@ -127,15 +127,7 @@ Now you have written a file. You can look at it with `less` or `cat`, or open it
 >
 > Open `README.txt`, add the date to the top of the file, and save the file. 
 >
-> > ## Solution
-> > 
-> > ~~~
-> > Use `nano README.txt` to open the file.  
-> > Add today's date and then use <kbd>Ctrl</kbd>-<kbd>X</kbd> to exit and `y` to save.
-> >
-> > ~~~
-> > 
-> 
+> [Click to view solution](.05-writing-scripts-exercises/lesson-5-exercise-1-solution.md)
 
 ## Writing scripts
 
@@ -170,14 +162,8 @@ It will look like nothing happened, but now if you look at `scripted_bad_reads.t
 >
 > We want the script to tell us when it is done.  
 > 
-> > ## Solution
-> > 
-> > ~~~
-> > 1. Open `bad-reads-script.sh` and add the line `echo "Script finished!"` after the `grep` command and save the file.
-> > 2. Run the updated script.
-> > ~~~
-> > 
-> 
+> [Click to view solution](.05-writing-scripts-exercises/lesson-5-exercise-2-solution.md)
+>
 
 ## Making the script into a program
 
@@ -437,14 +423,7 @@ $ scp <file you want to move, local or remote> <path to where I want to move it,
 > $ scp user@ip.address:/workspaces/codespace-metagenomics-shell/dc_workshop/data/untrimmed_fastq/scripted_bad_reads.txt ~/Downloads
 > ~~~
 > 
->
-> > ## Solution
-> >    A) False. This command will upload the file `local_file.txt` to the user's home directory on the remote machine.
-> >    B) True. This option downloads the bad reads file in `~/data/scripted_bad_reads.txt` to your local `~/Downloads` directory
-> >       **(make sure you substitute user@ip.address with your remote login credentials)**
-> >
-> > Note: In GitHub Codespaces, you typically don't need `scp` - just right-click a file in the Explorer panel and select "Download".
-> 
+> [Click to view solution](.05-writing-scripts-exercises/lesson-5-exercise-3-solution.md) 
 
 ---
 
