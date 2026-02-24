@@ -2,6 +2,18 @@
 
 [Back to Exercise 1](../04-redirection.md#exercise-1-using-grep)
 
+> ## Exercise 1: Using grep
+>
+> 1. Search for the sequence `GATCGAGAGGGGATAGGCG` in the `JC1A_R2.fastq` file.
+> Have your search return all matching lines and the name (or identifier) for each sequence
+> that contains a match.
+> 
+> 2. Search for the sequence `AAGTT` in all FASTQ files.
+> Have your search return all matching lines and the name (or identifier) for each sequence
+> that contains a match.
+>
+
+> ## Solution
 > 1. To search for the GATCGAGAGGGGATAGGCG sequence in the file JC1A_R2.fastq:
 > ~~~
 > $ grep -B1 GATCGAGAGGGGATAGGCG JC1A_R2.fastq
