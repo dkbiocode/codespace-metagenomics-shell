@@ -56,7 +56,7 @@ methods and approaches we need in bioinformatics are the same ones we need at th
 The first step in sending your sample for sequencing will be to complete a form documenting the metadata for the
 facility. Take a look at the following example submission spreadsheet.
 
-[Sample submission sheet](../files/sample_submission.txt)
+[Sample submission sheet](../../files/sample_submission.txt)
 
 Download the file using right-click (PC)/command-click (Mac). This file is a tab-delimited text file. Try opening it
 with Excel or another spreadsheet program.
