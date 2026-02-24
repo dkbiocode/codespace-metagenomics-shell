@@ -2,7 +2,7 @@
 <!-- rendered text and links. This will open an editor tab labeled "Preview [this file]"  -->
 
 <p id="top" style="text-align:center";>
-    <a href="05-writing-scripts.md">&larr; Writing Scripts</a> | <a href="07-SRA_Toolkit.md">SRA Toolkit &rarr;</a>
+    <a href="05-writing-scripts.md">&larr; Writing Scripts</a> 
 </p>
     
 
@@ -280,6 +280,6 @@ bioinformatics journey!
 ---
 
 <p id="top" style="text-align:center";>
-    <a href="05-writing-scripts.md">&larr; Writing Scripts</a> | <a href="07-SRA_Toolkit.md">SRA Toolkit &rarr;</a>
+    <a href="05-writing-scripts.md">&larr; Writing Scripts</a> 
 </p>
     
