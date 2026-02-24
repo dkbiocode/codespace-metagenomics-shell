@@ -13,3 +13,5 @@ _site
 .RData
 
 Gemfile.lock
+lessons/inject_exercises.py
+lessons/reformat_navbars.py
