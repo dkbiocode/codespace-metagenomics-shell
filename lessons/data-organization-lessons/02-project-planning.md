@@ -26,7 +26,7 @@ and are working with high-throughput (NGS) sequence data for the first time. In 
 methods and approaches we need in bioinformatics are the same ones we need at the bench or in the field -
 *planning, documenting, and organizing* are the key to good reproducible science.  
 
-> ## Discussion 1
+> ## Exercise 1
 >
 > Before we go any further, here are some important questions. If you are learning at a workshop,
 > please discuss these questions with your neighbor.
@@ -34,20 +34,12 @@ methods and approaches we need in bioinformatics are the same ones we need at th
 >
 > **Working with sequence data**
 >
-> What challenges do you think you'll face (or have already faced) in working with a large sequence dataset?  
+> What challenges do you think you'll face (or have already faced) in working with a large sequence dataset?
 > Where/how will you (did you) analyze your data - what software, what computer(s)?
-> What is your strategy for saving and sharing your sequence files?  
-> How can you be sure that your raw data has not been unintentionally corrupted?  
-> 
-> > ## Solution
-> > With large datasets it is hard to have enough storage space for your data and your results,
-> > and it is hard to anticipate how much disc space and processing time you need for every step of 
-> > your pipelines, including intermediate files and results.  
-> > It is hard to identify errors when you have too many files and too many observations in a spreadsheet.  
-> > Some programs may not work or perform poorly with many files.
-> > Data can be protected by removing file permissions and having copies.
-> > 
-> 
+> What is your strategy for saving and sharing your sequence files?
+> How can you be sure that your raw data has not been unintentionally corrupted?
+>
+> [See solution to exercise 1](.02-project-planning-exercises/lesson-2-exercise-1-solution.md)
 
 
 
@@ -61,33 +53,13 @@ facility. Take a look at the following example submission spreadsheet.
 Download the file using right-click (PC)/command-click (Mac). This file is a tab-delimited text file. Try opening it
 with Excel or another spreadsheet program.
 
-> ## Exercise 1: Identifying errors
+> ## Exercise 2: Identifying errors
 >
 > 1. What are some errors you can spot in the data? Typos, missing data, inconsistencies?
 > 2. What improvements could be made to the choices in naming?
 > 3. What are some errors in the spreadsheet that would be difficult to spot? Is there any way you can test this?
 >
-> > ## Solution
-> > Errors:
-> > - Sequential order of well_position changes
-> > - Format of client_sample_id changes and cannot have spaces, slashes, non-standard ASCII characters
-> > - Capitalization of the replicate column changes
-> > - Volume and concentration column headers have unusual (not allowed) characters
-> > - Volume, concentration, and RIN column decimal accuracy changes
-> > - The prep_date and ship_date formats are different, and prep_date has multiple formats 
-> > - Are there others not mentioned?
-> >
-> > Improvements in naming
-> > - Shorten client_sample_id names, and maybe just call them "names"
-> >   - For example: "wt" for "wild-type". Also, they are all "1hr", so that is superfluous information
-> > - The prep_date and ship_date might not be needed
-> > - Use "microliters" for "Volume (µL)," etc. 
-> >
-> > Errors hard to spot:
-> > - No space between "wild" and "type", repeated barcode numbers, missing data, duplicate names
-> > - Find by sorting, or counting
-> >
-> 
+> [See solution to exercise 2](.02-project-planning-exercises/lesson-2-exercise-2-solution.md)
 
 
 ## Retrieving sample sequencing data from the facility
@@ -99,23 +71,15 @@ Excel file:
 - [Sequencing results - text](../files/sequencing_results_metadata.txt)
 - [Sequencing results - Excel](../files/sequencing_results_metadata.xls)
 
-> ## Exercise 2: Exploring sequencing metadata
+> ## Exercise 3: Exploring sequencing metadata
 >
 > 1. How are these samples organized?
 > 2. If you wanted to relate file names to the sample names submitted above (e.g., wild type), could you do so?
 > 3. What do the \_R1/\_R2 extensions mean in the file names?
 > 4. What does the '.gz' extension on the filenames indicate?
-> 5. What is the total file size - what challenges in downloading and sharing these data might exist?  
+> 5. What is the total file size - what challenges in downloading and sharing these data might exist?
 >
-> > ## Solution
-> >
-> > 1. Samples are organized by sample_id
-> > 2. To relate filenames, use the sample_id and do a VLOOKUP on the submission sheet
-> > 3. The \_R1/\_R2 extensions mean "Read 1" and "Read 2" of each sample
-> > 4. The '.gz' extension means it is a compressed "gzip" type format to save disk space
-> > 5. The size of all the files combined is 1113.60 Gb (over a terabyte!). To transfer files this large, you should validate the file size following the transfer. Absolute file integrity checks following transfers and methods for faster file transfers are possible but beyond the scope of this lesson. 
-> >
-> 
+> [See solution to exercise 3](.02-project-planning-exercises/lesson-2-exercise-3-solution.md)
 
 
 ## Storing data

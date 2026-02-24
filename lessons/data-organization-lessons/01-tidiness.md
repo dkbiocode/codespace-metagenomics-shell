@@ -28,25 +28,12 @@ if not more so, is the data you have generated about the sequences before they e
 the sequencing center. Data about the data are often called the metadata. 
 The sequence data itself is useless without the information about what you sequenced.  
 
-> ## Discussion 1
+> ## Exercise 1
 > With the person next to you, discuss:
 >
 > What kinds of data and information have you generated before you sent your DNA/RNA off for sequencing?
 >
-> > ## Solution
-> > Types of files and information you have generated:  
-> > - Spreadsheet or tabular data with the data from your experiment and 
-> >   whatever you were measuring for your study.
-> > - Lab notebook notes about how you conducted those experiments.
-> > - Spreadsheet or tabular data about the samples you sent for sequencing. 
-> > Sequencing centers often have a particular format they need 
-> > with the name of the sample, DNA concentration, and other information.
-> > - Lab notebook notes about how you prepared the DNA/RNA for sequencing and what 
-> > type of sequencing you are doing, e.g., paired-end Illumina HiSeq.
-> > There likely will be other ideas here too.
-> > Was this more information and data than you were expecting?
-> > 
-> 
+> [See solution to exercise 1](.01-tidiness-exercises/lesson-1-exercise-1-solution.md)
 
 
 All the data and information discussed can be considered metadata, 
@@ -94,35 +81,20 @@ what the data is about.
 > the metadata needed for their platform. For example, MG-RAST gives a file like [this](../files/01_MGRAST_DATA.xlsx).
 
 
-> ## Discussion 2. What information would you write in your README file? 
-> Suppose that in your field, there are no metadata standards yet. Think about the 
-> minimum amount of information that someone would need to be able to work with your data without talking to you. 
-> What type of information would you put in your README file? 
+> ## Exercise 2: What information would you write in your README file?
+> Suppose that in your field, there are no metadata standards yet. Think about the
+> minimum amount of information that someone would need to be able to work with your data without talking to you.
+> What type of information would you put in your README file?
 >
-> > ## Solution
-> > Some examples of clarifications that need to be written in the README are:
-> > * Date format (mm-dd-yyyy or dd-mm-yyyy, for example).
-> > * Meaning of abbreviations.
-> > * Meaning or pattern followed to construct the unique IDs of samples.
-> > * Details about the methodology.
-> > * Contact information about the persons who performed the collection and/or experiments.
-> > * Meaning of each variable name.
-> 
+> [See solution to exercise 2](.01-tidiness-exercises/lesson-1-exercise-2-solution.md)
 
 
 
-> ## Discussion 3: Ethical considerations in microbiome studies
+> ## Exercise 3: Ethical considerations in microbiome studies
 > Microbiome knowledge is humanity's global heritage and must be ruled by ethical principles such as do good, do not harm, respect, and act justly.
-> While studying the human microbiome, there are particular concerns. For example, if you discover an infection such as HIV in the blood microbiome, would you inform the participants? What If they did not want to know? Following these principles, what other ethical considerations can you think about human microbiomes? 
-> > ## Solution
-> > 1. Respect: Ask participants to sign explicit prior informed consent.  
-> > 2. Do good: Share the data but protect participant's privacy
-> > 3. Do no harm: establish a policy about results communications. 
-> > 4. Do no harm: Consider the Invasiveness of sampling and minimize the risk
-> > 5. Act justly: Favor diversity of subjects and justice  
-> > More information about these topics is developed by Mc Guire et al. 2008 in the paper:[Ethical, legal, and social considerations in conducting the Human Microbiome Project](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4024738/) and by Lange et al. 2022 in:
-> > [Microbiome ethics, guiding principles for microbiome research, use and knowledge management](https://environmentalmicrobiome.biomedcentral.com/articles/10.1186/s40793-022-00444-y)'
-> 
+> While studying the human microbiome, there are particular concerns. For example, if you discover an infection such as HIV in the blood microbiome, would you inform the participants? What If they did not want to know? Following these principles, what other ethical considerations can you think about human microbiomes?
+>
+> [See solution to exercise 3](.01-tidiness-exercises/lesson-1-exercise-3-solution.md)
 
 
 
@@ -156,32 +128,10 @@ This format ensures that anyone can use the data required by most data repositor
 
 [![Messy spreadsheet](../../fig/data-organization-fig/01_tidiness_datasheet_example_messy.png)](https://github.com/datacarpentry/organization-genomics/raw/gh-pages/files/Ecoli_metadata_composite_messy.xlsx)
 
-> ## Discussion 4. Spreadsheet organization.
-> This is a potential spreadsheet data generated about a sequencing experiment. With the person next to you, for about 2 minutes, discuss some problems with the spreadsheet data shown above. You can look at the image or download the file to your computer via this [link](https://github.com/datacarpentry/organization-genomics/raw/gh-pages/files/Ecoli_metadata_composite_messy.xlsx) and open it in a spreadsheet reader like Excel. 
+> ## Exercise 4: Spreadsheet organization
+> This is a potential spreadsheet data generated about a sequencing experiment. With the person next to you, for about 2 minutes, discuss some problems with the spreadsheet data shown above. You can look at the image or download the file to your computer via this [link](https://github.com/datacarpentry/organization-genomics/raw/gh-pages/files/Ecoli_metadata_composite_messy.xlsx) and open it in a spreadsheet reader like Excel.
 >
->
-> > ## Solution
-> > There are a few potential errors to be on the lookout for in your own data and data from collaborators or the Internet. Suppose you are aware of the errors and the possible negative effect on downstream data analysis and result interpretation. In that case, it might motivate you and your project members to try and avoid them. Making small changes to how you format your data in spreadsheets can greatly impact efficiency and reliability when it comes to data cleaning and analysis.
-> >
-> > - Using multiple tables
-> > - Using multiple tabs
-> > - Not filling in zeros
-> > - Using problematic null values
-> > - Using formatting to convey information
-> > - Using formatting to make the datasheet look pretty
-> > - Placing comments or units in cells
-> > - Entering more than one piece of information in a cell
-> > - Using problematic field names
-> > - Using special characters in data
-> > - Inclusion of metadata in the data table
-> > - Date formatting
-> > 
-> > You can keep exploring issues on the metadata file in the [Data Carpentry Ecology spreadsheet lesson](http://www.datacarpentry.org/spreadsheet-ecology-lesson/02-common-mistakes/). Not all are present in this example. Discuss with the group what they found. Some problems include not all data sets having the same columns, datasets split into their own tables, color to encode information, different column names, and spaces in some columns names. Here is a "clean" version of the same spreadsheet:
-> >
-> > [Cleaned spreadsheet](https://raw.githubusercontent.com/datacarpentry/wrangling-genomics/gh-pages/files/Ecoli_metadata_composite.tsv)
-> > Download the file using right-click (PC)/command-click (Mac). 
-> >
-> 
+> [See solution to exercise 4](.01-tidiness-exercises/lesson-1-exercise-4-solution.md)
 
 
 ## Further notes on data tidiness

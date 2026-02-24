@@ -73,8 +73,7 @@ Follow the next steps to access the data in the SRA using the information in thi
 > our `SraRunTable.txt`.
 
 
-> ## Discussion 1  
-> Discuss with the person next to you:
+> ## Exercise 1
 >
 > 1. What was the sequencing platform used for this experiment?
 > 2. What samples in the experiment contain
@@ -82,31 +81,18 @@ Follow the next steps to access the data in the SRA using the information in thi
 > sequencing data?
 > 3. What other kind of metadata is available?
 >
-> > ## Solution
-> > 1. The Illumina sequencing platform was used, shown in the column "Platform". The column "Instrument" 
-> > shows which type of Illumina sequencer was used, in this case, Illumina MiSeq.  
-> > 2. The "LibraryLayout" column shows that all samples contain paired-end data.  
-> > 3. Technology and instruments are good examples of the types of metadata that can exist for a sequenced biological sample. 
-> > There is technical information, like "Assay Type" and "DATASTORE filetype", information about the sequences 
-> > like "Bases" and biological metadata like "environment_(biome)" and "potassium_ppm".  
-> >
-> 
+> [See solution to exercise 1](.03-ncbi-sra-exercises/lesson-3-exercise-1-solution.md)
 
 
 After answering the questions, you should avoid saving any changes you might have made to this file. We don't want to make any changes. If you were to save this file, make sure you save it as a plain `.txt` file. Remember to keep raw things raw.
 
-> ## Discussion 2: Exploring the European Nucleotide Archive
+> ## Exercise 2: Exploring the European Nucleotide Archive
 >
 > Navigate to the [ENA](https://www.ebi.ac.uk/ena) and search the BioProject "PRJEB22811". Explore the ENA Browser and discuss with your
 > neighbor the differences between the ENA Browser and the SRA Run Selector.
 >
+> [See solution to exercise 2](.03-ncbi-sra-exercises/lesson-3-exercise-2-solution.md)
 
-
-> ## Downloading reads
-> For downloading the reads, there are mainly two options:
-> * One by one: Go to the **Run Browser** of each sample, navigate to the tab **FASTA/FASTQ download** and click on the **FASTQ** button.
-> * Complete dataset: In the SRA **Run Selector** of the BioProject, go to the **Select** section and click on the **Accession List** button. This will 
-> download a text file `SRR_Acc_List.txt` that you can use to download the reads in bulk with the [SRA Toolkit](http://www.ncbi.nlm.nih.gov/Traces/sra/?view=toolkit_doc), a command-line software package, which is outside the scope of this lesson.
 
 
 ## Where to learn more
