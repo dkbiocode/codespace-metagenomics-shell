@@ -1,7 +1,10 @@
 <!-- If you are in VS-Code, click in this window and do Shift-Ctrl/Command-V to view      -->
 <!-- rendered text and links. This will open an editor tab labeled "Preview [this file]"  -->
 
-[Previous lesson: Project Organization (06-organization.md)](06-organization.md)
+<p id="top" style="text-align:center";>
+    <a href="06-organization.md">&larr; Project Organization</a>
+</p>
+    
 
 # SRA Toolkit
 
@@ -345,4 +348,7 @@ use the already scrutinized data to practice, run newly-develop tools, and teach
 
 ---
 
-[Previous lesson: Project Organization (06-organization.md)](06-organization.md)
+<p id="top" style="text-align:center";>
+    <a href="06-organization.md">&larr; Project Organization</a>
+</p>
+    

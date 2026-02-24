@@ -1,7 +1,10 @@
 <!-- If you are in VS-Code, click in this window and do Shift-Ctrl/Command-V to view      -->
 <!-- rendered text and links. This will open an editor tab labeled "Preview [this file]"  -->
 
-[Previous lesson: Introducing the Shell (01-introduction.md)](01-introduction.md) | [Next lesson: Working with Files (03-working-with-files.md)](03-working-with-files.md)
+<p id="top" style="text-align:center";>
+    <a href="01-introduction.md">&larr; Introducing the Shell</a> | <a href="03-working-with-files.md">Working with Files &rarr;</a>
+</p>
+    
 
 # Navigating Files and Directories
 
@@ -230,4 +233,7 @@ The commands `cd`, and `cd ~` are very useful for quickly navigating back to you
 
 ---
 
-[Previous lesson: Introducing the Shell (01-introduction.md)](01-introduction.md) | [Next lesson: Working with Files (03-working-with-files.md)](03-working-with-files.md)
+<p id="top" style="text-align:center";>
+    <a href="01-introduction.md">&larr; Introducing the Shell</a> | <a href="03-working-with-files.md">Working with Files &rarr;</a>
+</p>
+    

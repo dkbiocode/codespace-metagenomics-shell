@@ -1,7 +1,10 @@
 <!-- If you are in VS-Code, click in this window and do Shift-Ctrl/Command-V to view      -->
 <!-- rendered text and links. This will open an editor tab labeled "Preview [this file]"  -->
 
-[Next lesson: Navigating Files and Directories (02-the-filesystem.md)](02-the-filesystem.md)
+<p id="top" style="text-align:center";>
+    <a href="02-the-filesystem.md">Navigating Files and Directories &rarr;</a>
+</p>
+    
 
 # Introducing the Shell
 
@@ -328,4 +331,7 @@ using the command line shell enables us to make our workflow more efficient and 
 
 ---
 
-[Next lesson: Navigating Files and Directories (02-the-filesystem.md)](02-the-filesystem.md)
+<p id="top" style="text-align:center";>
+    <a href="02-the-filesystem.md">Navigating Files and Directories &rarr;</a>
+</p>
+    

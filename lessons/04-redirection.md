@@ -1,7 +1,10 @@
 <!-- If you are in VS-Code, click in this window and do Shift-Ctrl/Command-V to view      -->
 <!-- rendered text and links. This will open an editor tab labeled "Preview [this file]"  -->
 
-[Previous lesson: Working with Files (03-working-with-files.md)](03-working-with-files.md) | [Next lesson: Writing Scripts (05-writing-scripts.md)](05-writing-scripts.md)
+<p id="top" style="text-align:center";>
+    <a href="03-working-with-files.md">&larr; Working with Files</a> | <a href="05-writing-scripts.md">Writing Scripts &rarr;</a>
+</p>
+    
 
 # Redirection
 
@@ -380,4 +383,7 @@ $ for filename in *.txt
 
 ---
 
-[Previous lesson: Working with Files (03-working-with-files.md)](03-working-with-files.md) | [Next lesson: Writing Scripts (05-writing-scripts.md)](05-writing-scripts.md)
+<p id="top" style="text-align:center";>
+    <a href="03-working-with-files.md">&larr; Working with Files</a> | <a href="05-writing-scripts.md">Writing Scripts &rarr;</a>
+</p>
+    

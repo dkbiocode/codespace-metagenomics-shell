@@ -2,7 +2,10 @@
 <!-- rendered text and links. This will open an editor tab labeled "Preview [this file]"  -->
 
 
-[Previous lesson: Navigating Files and Directories (02-the-filesystem.md)](02-the-filesystem.md) | [Next lesson: Redirection (04-redirection.md)](04-redirection.md)
+<p id="top" style="text-align:center";>
+    <a href="02-the-filesystem.md">&larr; Navigating Files and Directories</a> | <a href="04-redirection.md">Redirection &rarr;</a>
+</p>
+    
 
 # Working with Files and Directories
 
@@ -423,4 +426,7 @@ just nicely put the files in the Trash. They're really gone.
 
 ---
 
-[Previous lesson: Navigating Files and Directories (02-the-filesystem.md)](02-the-filesystem.md) | [Next lesson: Redirection (04-redirection.md)](04-redirection.md)
+<p id="top" style="text-align:center";>
+    <a href="02-the-filesystem.md">&larr; Navigating Files and Directories</a> | <a href="04-redirection.md">Redirection &rarr;</a>
+</p>
+    

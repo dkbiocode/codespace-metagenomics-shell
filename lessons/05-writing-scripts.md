@@ -1,7 +1,10 @@
 <!-- If you are in VS-Code, click in this window and do Shift-Ctrl/Command-V to view      -->
 <!-- rendered text and links. This will open an editor tab labeled "Preview [this file]"  -->
 
-[Previous lesson: Redirection (04-redirection.md)](04-redirection.md) | [Next lesson: Project Organization (06-organization.md)](06-organization.md)
+<p id="top" style="text-align:center";>
+    <a href="04-redirection.md">&larr; Redirection</a> | <a href="06-organization.md">Project Organization &rarr;</a>
+</p>
+    
 
 # Writing Scripts and Working with Data
 
@@ -441,4 +444,7 @@ $ scp <file you want to move, local or remote> <path to where I want to move it,
 
 ---
 
-[Previous lesson: Redirection (04-redirection.md)](04-redirection.md) | [Next lesson: Project Organization (06-organization.md)](06-organization.md)
+<p id="top" style="text-align:center";>
+    <a href="04-redirection.md">&larr; Redirection</a> | <a href="06-organization.md">Project Organization &rarr;</a>
+</p>
+    
