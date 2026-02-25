@@ -1,3 +1,6 @@
+<!-- If you are in VS-Code, click in this window and do Shift-Ctrl/Command-V to view      -->
+<!-- rendered text and links. This will open an editor tab labeled "Preview [this file]"  -->
+
 # Planning for NGS Projects
 
 > Teaching: 10 min | Exercises: 10 min
