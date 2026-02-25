@@ -1,3 +1,6 @@
+<!-- If you are in VS-Code, click in this window and do Shift-Ctrl/Command-V to view      -->
+<!-- rendered text and links. This will open an editor tab labeled "Preview [this file]"  -->
+
 # Introduction to the Command Line for Metagenomics (adapted for GitHub Codespaces)
 
 This set of lessons is an adaptation of the data carpentries series on metagenomics [(their original README below)](#introduction-to-the-command-line-for-metagenomics).  It has minimal modifications to replace references to an Amazon Cloud computing with GitHub Codespace specific paths and instructions.  Also, the full web-formatted capability has been scaled back to be viewed in rendered markdown through VS Code's Preview function.
